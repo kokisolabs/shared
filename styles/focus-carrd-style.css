@@ -1,0 +1,54 @@
+/*
+****************************************
+
+FOCUS - CARRD - STYLE
+
+****************************************
+Css style for the website : https://deepfocus.carrd.co
+*/
+
+/* IMPORT POMODORO WIDGET */
+@import url("https://angeandria.com/external/plugins/andriaa-pomodoro/style.css");
+
+
+#wrapper{
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+/*
+***************
+GENERAL
+***************
+*/
+p a{
+	color:orange;
+	text-decoration: none !important;
+}
+
+/*
+***************
+HELPERS
+***************
+*/
+
+@media (min-width: 1024px) {
+	.sticky{
+		position: fixed;
+	}	
+	.sticky.top-right{
+		top:10px;
+		right: 10px;
+	}
+	.sticky.bottom-right{
+		top:10px;
+		right: 10px;
+	}
+}
+
+/*
+***************
+CONTENT
+***************
+*/
+/* Pomodoro Widget */

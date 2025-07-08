@@ -1,0 +1,628 @@
+/*
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+BG COLORS
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+_bg-colors.scss
+*/
+/*
+************************
+|| GENERAL
+*/
+body {
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+body,
+.main-content,
+.course-item,
+.course-footer,
+.lesson-progress .progress,
+.chart-holder,
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+  background-color: var(--primary-color-min);
+}
+
+/*
+************************
+*   || MIN
+*/
+input[type=text], input[type=email], input[type=password] {
+  background-color: var(--primary-color-min);
+}
+
+/*
+************************
+*   || XXS
+*/
+.bundle,
+.dropdown-label,
+.progress,
+.profile-cover .profile-box,
+.activity-feed {
+  background-color: var(--primary-color-xxs);
+  color: var(--topbar-secondary-color-bright);
+}
+
+.row.lesson-form-row section {
+  background-color: var(--primary-color-xxs) !important;
+}
+
+/*
+************************
+*   || XS
+*/
+.ui-layout-center,
+.outline-sidebar,
+.dashboard-footer,
+.lesson-card,
+.dropdown-menu .divider,
+ul.file-list.outline-list li.folder,
+.lesson-item.selected,
+.admin-link-row {
+  background-color: var(--primary-color-xs);
+}
+
+/*
+************************
+*   || S
+*/
+.bundle-label,
+.notes-holder .bookmarked-card,
+.course-nav,
+.launch-checklist,
+.admin-link-row .link-label,
+#lesson-author,
+.handle,
+.list-toggle,
+.mentor-tabs, .photo-tabs {
+  background-color: var(--primary-color-s);
+  color: var(--text-color);
+}
+
+/*
+************************
+*   || M
+*/
+/*
+************************
+*   || Basic
+*/
+.settings-list .table-responsive {
+  background-color: var(--primary-color);
+}
+
+.course-nav .dropdown-toggle.preview-link,
+.outline-header,
+#courseSwitch .preview-link,
+#courseSwitch .dropdown-menu,
+#lessonOptions .dropdown-menu {
+  background-color: var(--primary-color-m);
+  color: var(--text-color-bright);
+}
+
+#courseViews.dropdown.open .dropdown-toggle,
+#courseViews .dropdown-menu {
+  background-color: var(--primary-color-m);
+}
+
+/*
+************************
+*   || L
+*/
+.fuzzy-search, .search {
+  background-color: var(--primary-color-l);
+}
+
+.draft-badge {
+  background-color: var(--accent-color-darker);
+}
+
+/* TODO - IMPORTED FROM BASE */
+input, textarea, select,
+.student-search input[type=text],
+.font-select > span,
+.form-control {
+  background-color: var(--form-fields-color);
+  color: var(--global-font-primary-color);
+  border-color: transparent;
+}
+
+/* ********************************************
+*  || TOPBAR
+*  ********************************************
+*/
+/* TODO - IMPORTED FROM BASE */
+.login .dropdown-menu {
+  background-color: var(--topbar-secondary-color);
+}
+
+.login .icon-bar {
+  background-color: var(--topbar-text-color-bright);
+}
+
+/* ********************************************
+*  || SIDEBAR
+*  ********************************************
+*/
+/*
+************************
+*   || COLOR BRIGHT
+*/
+.sidebar-tabs,
+.sidebar-tabs.nav > li > a:focus,
+.ui-layout-west,
+.ui-layout-west .start-text, .ui-mobile-sidebar .start-text,
+.notes-holder .bookmarked-card,
+.bookmarked-card {
+  background-color: var(--sidebar-color-bright);
+}
+
+/*
+************************
+*   || COLOR
+*/
+.courses-back,
+.float-pane,
+.float-pane .close-pane,
+.sidebar-tabs.nav-tabs > li.active > a,
+.sidebar-tabs li a:hover,
+.course-label {
+  background-color: var(--sidebar-color);
+  color: var(--sidebar-text-color-min);
+}
+
+/*
+************************
+*   || COLOR DARK
+*/
+/*
+************************
+*   || TRANSPARENT
+*/
+.breadcrumb,
+.course,
+.lessson-card,
+.lesson-container,
+.card-edit-link,
+#courseViews li a, #courseViews li button,
+.dropdown-menu .preview-link:hover,
+.lesson-item,
+.course-navigation a:hover,
+.module-item,
+.sidebar li.folder > a:hover,
+.sidebar .file-list li ul li.selected,
+.files-pane .module-item h3,
+.file-list li ul li:hover {
+  background-color: transparent;
+}
+
+.sidebar li a .draft-badge {
+  background-color: var(--accent-color-darker);
+}
+
+/* ***************************************************
+*   Imported from BASE.SCSS
+* *******************************************************
+*/
+html,
+body,
+.login .dropdown-menu,
+pre,
+.ui-layout-west,
+.ui-mobile-sidebar {
+  background-color: var(--aa-global-color-primary);
+}
+
+/*
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+BORDERS
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+_borders.scss
+*/
+input:focus, textarea:focus,
+.student-search input[type=text]:focus {
+  border-color: var(--aa-global-color-secondary) !important;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th,
+.table > tfoot > tr > th, .table > thead > tr > td,
+.table > tbody > tr > td, .table > tfoot > tr > td,
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  border-color: var(--aa-global-color-secondary);
+}
+
+.btn:focus {
+  outline: thin dotted;
+}
+
+/*
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+DEFINE MIXINS
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+_mixins.scss
+*/
+/*
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+SCROLLBARS
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+_scrollbars.scss
+*/
+body::-webkit-scrollbar,
+.ui-layout-center::-webkit-scrollbar,
+input::-webkit-scrollbar, textarea::-webkit-scrollbar, iframe::-webkit-scrollbar,
+.admin-link-row::-webkit-scrollbar,
+.scroll-pane::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+  border-left: 1px solid var(--aa-global-color-primary);
+  border-right: 1px solid var(--aa-global-color-primary);
+  border-color: var(--aa-global-color-primary);
+}
+body::-webkit-scrollbar-thumb,
+.ui-layout-center::-webkit-scrollbar-thumb,
+input::-webkit-scrollbar-thumb, textarea::-webkit-scrollbar-thumb, iframe::-webkit-scrollbar-thumb,
+.admin-link-row::-webkit-scrollbar-thumb,
+.scroll-pane::-webkit-scrollbar-thumb {
+  background-color: var(--aa-global-color-secondary);
+}
+body::-webkit-scrollbar-track, body::-webkit-resizer,
+.ui-layout-center::-webkit-scrollbar-track,
+.ui-layout-center::-webkit-resizer,
+input::-webkit-scrollbar-track,
+input::-webkit-resizer, textarea::-webkit-scrollbar-track, textarea::-webkit-resizer, iframe::-webkit-scrollbar-track, iframe::-webkit-resizer,
+.admin-link-row::-webkit-scrollbar-track,
+.admin-link-row::-webkit-resizer,
+.scroll-pane::-webkit-scrollbar-track,
+.scroll-pane::-webkit-resizer {
+  background-color: var(--aa-global-color-primary);
+}
+body,
+.ui-layout-center,
+input, textarea, iframe,
+.admin-link-row,
+.scroll-pane {
+  scrollbar-face-color: var(--aa-global-color-secondary);
+  scrollbar-track-color: var(--aa-global-color-primary);
+}
+
+/*
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+*TEXT COLORS
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+_text-colors.scss
+*/
+/* *************************
+*   GENERAL
+*/
+body,
+p,
+h1, h2, h3, h4, h5, h6,
+.lesson h1, .lesson h2, .lesson h3, .lesson h4, .lesson h5, .lesson h6, .lesson p, .lesson blockquote,
+.course h1, .course h2, .course h3, .course h4, .course h5, .course h6, .course p, .course blockquote,
+.course-item h1, .course-item h2, .course-item h3, .course-item h4, .course-item h5, .course-item h6, .course-item p, .course-item blockquote,
+.bundle h1, .bundle h2, .bundle h3, .bundle h4, .bundle h5, .bundle h6, .bundle p, .bundle blockquote,
+h1.message-header,
+input, button, select, textarea,
+.lesson-form textarea,
+.font-select > span,
+::placeholder,
+pre,
+.lesson-header .lesson-title,
+.lesson h1,
+.course .module-item h1, .bundle .module-item h1,
+.course .module-item h2, .bundle .module-item h2,
+.course .module-item h3, .bundle .module-item h3,
+.sec-btn {
+  color: var(--text-color);
+}
+
+hr {
+  border-color: var(--aa-global-color-secondary);
+}
+
+/* *************************
+*   LINKS
+*/
+a, .lesson a, .course a {
+  color: var(--global-links-color);
+}
+
+a:hover, .lesson a:hover, .course a:hover {
+  color: var(--global-links-hover-color);
+}
+
+.bill-info, .bill-info p {
+  color: var(--global-links-color-secondary);
+}
+
+/* *******************
+*   GENERAL
+*/
+.course-item .product-price,
+.save-btn,
+.course .module-item h3, .bundle .module-item h3,
+.lesson-list-head,
+.lesson-item a,
+#courseViews li a, #courseViews li button,
+.lesson-stats i,
+.breadcrumb li,
+.list-toggle {
+  color: var(--text-color-bright);
+}
+
+body,
+.breadcrumb li a,
+.breadcrumb li:nth-of-type(2) a,
+.course-description,
+.lesson-header .author,
+.lesson-card a h2,
+.dropdown-menu .preview-link:hover,
+.ui-layout-west,
+.row.stats-top-row p,
+.row.stats-top-row p strong,
+#courseSwitch .dropdown-menu li a,
+.outline-list h4,
+ul.file-list li,
+.options-dropdown,
+#lessonOptions i {
+  color: var(--text-color);
+}
+
+.course-edit-outline .folder-toggle,
+.module-item h3 a {
+  color: var(--text-color-dark);
+}
+
+/* *******************
+*   TOPBAR
+*/
+.second-nav li a,
+.profile-link,
+.login .icon-bar,
+.login .dropdown-toggle {
+  color: var(--topbar-text-color);
+}
+
+.dropdown-menu > li > a,
+#courseViews li i {
+  color: var(--topbar-text-color-bright);
+}
+
+/* *******************
+*   SIDEBAR
+*/
+.sidebar li a,
+.notes-holder .bookmarked-card,
+.float-pane h3 i,
+.bookmarked-card h6 i,
+.float-pane .close-pane {
+  color: var(--sidebar-text-color-bright);
+}
+
+.sidebar.active-course li a,
+.sidebar.active-course .folder-toggle,
+.sidebar .file-list li i, .sidebar .file-list p i,
+.sidebar-tabs li a i,
+.files-pane strong,
+.float-pane h3 {
+  color: var(--sidebar-text-color);
+}
+
+.files-pane .module-item h3,
+.sidebar ul > li > a:hover,
+.sidebar-tabs li a:hover,
+.admin-link-row .link-label {
+  color: var(--sidebar-text-color-dark);
+}
+
+.sidebar ul > li > a:hover i {
+  color: var(--sidebar-text-color-dark) !important;
+}
+
+/*
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+TYPOGRAPHY
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+_typography.scss
+*/
+body, p {
+  font-family: var(--global-font-primary-family);
+  font-size: var(--global-font-size);
+  line-height: var(--global-line-height);
+  font-weight: var(--global-font-primary-weight);
+}
+
+.lesson h1, .lesson h2, .lesson h3, .lesson h4, .lesson h5, .lesson h6,
+.course h1, .course h2, .course h3, .course h4, .course h5, .course h6,
+.course-item h1, .course-item h2, .course-item h3, .course-item h4, .course-item h5, .course-item h6,
+.bundle h1, .bundle h2, .bundle h3, .bundle h4, .bundle h5, .bundle h6,
+h1.message-header {
+  font-family: var(--global-font-secondary-family);
+}
+
+.lesson, .lesson p,
+.course, .course p,
+.lesson article {
+  font-family: var(--global-font-text-family);
+  font-size: var(--global-font-size);
+  font-weight: var(--global-font-text-weight);
+}
+
+/*
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+BASE - Base elements
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+_base.scss
+*/
+/*
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+THEME CONSTRUCTOR
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+_theme_constructor.scss
+*/
+/* ------------------- Do NOT Edit ------------------- */
+/* ------------------- Do NOT Edit ------------------- */
+/* ------------------- Do NOT Edit ------------------- */
+/* Get/Set Theme Default */
+/* Imports */
+/* Theme defaults */
+/* -------- Start Editing BELOW this line --------*/
+/* -------- Start Editing BELOW this line --------*/
+/* -------- Start Editing BELOW this line --------*/
+/*
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+THEME CONSTRUCTOR - STYLESHEET
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+_index.scss
+*/
+/*
+// ***********
+// PARTS
+// ***********
+@use 'parts/_footer';
+@use 'parts/_header' as pt_header;
+@use 'parts/_main';
+@use 'parts/_sidebar';
+
+// ***********
+// PAGES
+// ***********
+@use 'pages/_admin';
+@use 'pages/_all-courses';
+@use 'pages/_bundle';
+@use 'pages/_checkout';
+@use 'pages/_conversations';
+@use 'pages/_course';
+@use 'pages/_landing';
+@use 'pages/_course-edit';
+// @use 'pages/_lessons';
+@use 'pages/_login';
+@use 'pages/_messageboards';
+@use 'pages/_messages';
+@use 'pages/_notifications';
+@use 'pages/_preview';
+@use 'pages/_profile-edit';
+@use 'pages/_profile';
+@use 'pages/_projects';
+@use 'pages/_users';
+// @use 'pages/_profile-edit';
+// @use 'pages/_admin';
+*/
+/* Setup Theme Variables */
+:root {
+  /* *******************
+  COLORS
+  ******************** */
+  --aa-global-color-primary: #FFF;
+  --aa-global-color-secondary: #FFF;
+  --topbar-color-primary: var(--aa-global-color-secondary);
+  --topbar-color-secondary: var(--aa-global-color-primary);
+  --topbar-burger-bg-color: transparent;
+  --sidebar-color-primary: var(--aa-global-color-primary);
+  --sidebar-color-secondary: transparent;
+  --float-pane-color-primary: #282828;
+  --float-pane-color-secondary: #282828;
+  --sidebar-tabs-color-primary: rgba(0,0,0,0.05);
+  --layout-center-color-primary: var(--aa-global-color-secondary);
+  --breadcrumb-color-primary: transparent;
+  --lesson-container-color-primary: transparent;
+  --lesson-info-color-primary: #fad5d52e;
+  --form-fields-color: #FFF;
+  --highlight-color-primary: #335477;
+  --login-bg-image: url("https://images.unsplash.com/photo-1487700160041-babef9c3cb55?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1035&q=80");
+  /* *******************
+  TYPOGRAPHY
+  ******************** */
+  --font-scale-ratio: 1;
+  --line-height-ratio: 1;
+  --global-font-size: calc(1.2rem * var(--font-scale-ratio));
+  --global-line-height: calc(1.2em * var(--line-height-ratio));
+  --global-font-primary-family: "Roboto", sans-serif;
+  --global-font-primary-color: #000;
+  --global-font-primary-weight: 400;
+  --global-font-secondary-family: var(----global-font-primary-family);
+  --global-font-secondary-color: var(--global-font-primary-color);
+  --global-font-secondary-weight: 900;
+  --global-font-text-family: var(--global-font-primary-family);
+  --global-font-text-color: var(--global-font-secondary-color);
+  --global-font-text-weight: 500;
+  --global-font-accent-family: "Roboto";
+  --global-font-accent-color: var(--global-font-secondary-color);
+  --global-font-accent-weight: 500;
+  /* *******************
+  LINKS
+  ******************** */
+  --global-links-color-primary: #f68812;
+  --global-links-hover-color-primary: #c1c521;
+  --global-links-color-secondary: #000;
+  --global-links-hover-color-secondary: #9198d3;
+  --topbar-links-primary-family: var(--global-font-primary-family);
+  --topbar-links-primary-color: #000;
+  --topbar-links-primary-weight: var(--global-font-primary-weight);
+  --topbar-links-hover-color-primary: #9198d3;
+  --topbar-links-color-secondary: #6C6C6C;
+  --topbar-burger-color: var(--topbar-links-primary-color);
+  --topbar-burger-hover-color: var(--topbar-links-hover-color-primary);
+  --topbar-links-size: calc(1.1rem * var(--font-scale-ratio));
+  --topbar-logo-family: var(--global-font-secondary-family);
+  --topbar-logo-color: var(--topbar-links-primary-color);
+  --topbar-logo-weight: var(--topbar-links-primary-weight);
+  --topbar-logo-transform: uppercase;
+  --sidebar-text-color-primary: var(--global-font-primary-color);
+  --sidebar-links-color-primary: var(--sidebar-text-color-primary);
+  --sidebar-links-hover-color-primary: #7187dd;
+  --sidebar-links-selected-color-primary: #7187dd;
+  --sidebar-links-icon-color-primary: var(--sidebar-links-color-primary);
+  --sidebar-font-size: calc(1.4rem * var(--font-scale-ratio));
+  --lesson-info-text-color-primary: #333;
+  --content-font-size: calc(1.7rem * var(--font-scale-ratio));
+  --content-line-height: calc(1.7em * var(--line-height-ratio));
+  /* DO NOT MODIFY */
+  --topbar-padding-vertical: 10px;
+  --topbar-height:46;
+  --topbar-height-px: calc(var(--topbar-height) * 1px);
+  --topbar-height-calc: calc(var(--topbar-height-px) + (var(--topbar-padding-vertical) * 2));
+  --topbar-bottom-offset: 0px;
+  --topbar-links-right-offset: 0px;
+}
+
+/*
+++++++++++++++++++++++++++++++++++
+
+DEFAULT THEME - CUSTOM CSS
+
+++++++++++++++++++++++++++++++++++
+*/
+/*
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+DEFAULT THEME - CUSTOM CSS
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/

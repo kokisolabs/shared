@@ -1,0 +1,1 @@
+Les scripts contenus dans son dossier sont centralisés 

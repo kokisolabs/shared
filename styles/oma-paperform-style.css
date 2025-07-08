@@ -1,0 +1,66 @@
+
+/*
+****************************************
+
+OMA - PAPERFORM - STYLE
+
+****************************************
+Css style for the Paperform forms used for the website : https://omapause.carrd.co
+*/
+
+
+/* Remove shadows from multiple choices */
+.btn-raised,
+.btn-raised:hover{
+    box-shadow: none;
+}
+
+.btn-raised.btn-default:hover{
+    background-color: #f1f2ff;
+}
+
+/* Yes/No buttons */
+.YesNo .btn-raised.btn-default{
+    border-right: 3px solid #FFF;
+}
+
+
+/* Price block */
+.LiveField--price .LiveField__input:not(.LiveField__input--manualfocus){
+    border: none;
+}
+
+/* Nav buttons */
+.Pagination button.btn-raised.btn-primary[disabled=""] {
+  opacity:.5;
+}
+
+
+/* Progress bar */
+.Pagination__progresstrack {
+  background-color: #C69571;
+}
+
+/* Hide price on pagination */
+.Pagination__price{
+    display: none;
+}
+
+/* Hide price field */
+div [data-key="djpll"]{
+    display: none;
+}
+
+
+
+/* Confirm as a woman */
+.LiveField.Paperform__Question--8jv6j{
+    border: 1px solid #F00000;
+    padding: 20px;
+}
+
+.Paperform__Question--8jv6j .LiveField__description{
+    color: #F00000;
+}
+
+

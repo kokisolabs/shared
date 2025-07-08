@@ -1,0 +1,14 @@
+/*
+****************************************
+
+PAPERFORM DEFAULTS
+
+****************************************
+import defaults that I want to apply accros several paperforms
+Use : @import url("https://angeandria.com/external/paperform-defaults.css");
+*/
+
+/* Remove empty lines */
+.block--empty{
+    display: none;
+}

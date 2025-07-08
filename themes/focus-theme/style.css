@@ -1,0 +1,288 @@
+/* ************************************
+ * 
+ * VARIABLES
+ *
+ * ************************************
+ * Last edit : 2023.06.10, 20:15
+ */
+
+
+
+/* ************************************
+ * 
+ * VARIABLES
+ *
+ * ************************************
+ */
+
+:root{
+    
+    /* Helpers */
+    --fcs-box-shadow: 0 0 30px rgba(0,0,0,.08);
+    --fcs-page-width: 700px;
+    --fcs-page-width-m: 960px;
+    --fcs-page-width-l: 1100px;
+}
+
+
+/* ************************************
+ * 
+ * GENERAL
+ *
+ * ************************************
+ */
+
+/*
+---------------------
+PAGE WIDTH
+---------------------
+*/
+
+.page:not(.has-sidebar) #content-wrap #content,
+#footer #footer-inner #footer-widgets{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page:not(.has-sidebar) #content-wrap #content{
+	max-width: var(--fcs-page-width);
+}
+
+#footer #footer-inner #footer-widgets{
+    max-width: var(--fcs-page-width-m);
+}
+
+
+/*
+---------------------
+LINKS
+---------------------
+*/
+.single-post:not(.elementor-page) .entry-content a:not(.wp-block-button__link):not(.wp-block-file__button),
+.page:not(.elementor-page):not(.woocommerce-page) .entry a:not(.wp-block-button__link):not(.wp-block-file__button){
+    text-decoration: none;
+}
+
+
+/* ************************************************************************
+ * 
+ * HEADER
+ *
+ * ************************************************************************
+ */
+header#site-header{
+	box-shadow: var(--fcs-box-shadow);
+}
+
+
+/*
+---------------------
+LOGO
+---------------------
+*/
+#site-logo #site-logo-inner a{
+	/*color: #000000;*/
+}
+
+
+/* ************************************************************************
+ * 
+ * PAGE
+ *
+ * ************************************************************************
+ */
+
+header.page-header{
+	text-align: center;
+}
+
+
+a.post-edit-link{
+    padding: 10px 12px;
+    background-color: #EFEFEF;
+    font-size: 1.2rem;
+    border-radius: 0 8px 8px 0;
+    color: #AAA;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+
+
+/* ************************************************************************
+ * 
+ * SINGLE ARTICLE
+ * 
+ * ************************************************************************
+ */
+.single .entry-title,
+.single-post ul.meta{
+	border: none;
+}
+
+/*
+---------------------
+META
+---------------------
+*/
+.single-post.content-max-width ul.meta {
+  margin-bottom: 40px;
+}
+
+/* Hide Meta icons */
+article ul.meta i{
+	display: none;
+}
+
+/*
+---------------------
+FEATURED IMAGE
+---------------------
+*/
+.single-post.content-max-width .thumbnail{
+    margin-bottom: 3em;
+}
+
+/*
+---------------------
+ENTRY CONTENT
+---------------------
+*/
+/* HEADERS */
+.single-post.content-max-width .entry-content h1,
+.single-post.content-max-width .entry-content h2,
+.single-post.content-max-width .entry-content h3,
+.single-post.content-max-width .entry-content h4,
+.single-post.content-max-width .entry-content h5,
+.single-post.content-max-width .entry-content h6{
+	margin-top: 1.7em;
+	margin-bottom: .3em;
+}
+
+/* IMAGES */
+.site-content img,
+.single-post.content-max-width article figure img {
+    margin-top: 40px;
+    margin-bottom: 40px
+}
+
+/* ************************************************************************
+ * 
+ * SIDEBAR
+ * 
+ * ************************************************************************
+ */
+.sidebar-container{
+	border:none;
+}
+
+
+/* ************************************************************************
+ * 
+ * FOOTER
+ * 
+ * ************************************************************************
+ */
+
+#footer{
+    margin-top: 30px;
+}
+
+#footer-widgets{
+    border-top: 1px solid #DFDFDF;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.footer-widgets-inner.container {
+    max-width: 100%;
+}
+
+.footer-box {
+    letter-spacing: .1em;
+}
+
+#footer-widgets .footer-box .footer-widget h4{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+}#footer-widgets .footer-box .footer-widget ul{
+    margin-left: 0;
+}
+
+#footer-widgets .footer-box .footer-widget ul li {
+  margin-bottom: 0px;
+  line-height: 1.3em;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+/* ************************************************************************************************************************************************
+ * 
+ * MEDIA QUERIES
+ * 
+ * ************************************************************************************************************************************************
+ */
+
+
+/*
+---------------------
+MOBILE ONLY
+---------------------
+*/
+@media (max-width: 480px) {
+    /*
+    ---------------------
+    FOOTER
+    ---------------------
+    */
+    #footer-widgets {
+        text-align:center;
+    }
+
+}
+
+/*
+---------------------
+ALL BUT MOBILE
+---------------------
+*/
+@media (min-width: 481px) {
+    /*
+    ---------------------
+    CONTENT WRAP
+    ---------------------
+    */
+    /* Top page padding */
+    .single-post #main #content-wrap{
+        padding-top: 80px;
+    }
+
+    .page .site-main header.page-header{
+        padding-top: 110px;
+    }
+
+    .page .site-main #content-wrap{
+        padding-top: 20px;
+    }
+
+    /*
+    ---------------------
+    FOOTER
+    ---------------------
+    */
+    #footer-widgets .footer-box.col-1{
+        padding-left: 0;
+    }
+    #footer-widgets .footer-box.col-4{
+        padding-right: 0;
+    }
+
+}

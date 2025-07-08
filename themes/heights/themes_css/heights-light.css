@@ -1,0 +1,2085 @@
+@charset "UTF-8";
+/*
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+BG COLORS
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+_bg-colors.scss
+*/
+/*
+************************
+|| GENERAL
+*/
+body {
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+body,
+.main-content,
+.course-item,
+.course-footer,
+.lesson-progress .progress,
+.upsell-banner,
+.chart-holder,
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+  background-color: var(--primary-color-min);
+}
+
+/*
+************************
+*   || MIN
+*/
+input[type=text], input[type=email], input[type=password] {
+  background-color: var(--primary-color-min);
+}
+
+/*
+************************
+*   || XXS
+*/
+.bundle,
+.dropdown-label,
+.progress,
+.profile-cover .profile-box,
+.launch-checklist,
+.activity-feed {
+  background-color: var(--primary-color-xxs);
+  color: var(--topbar-secondary-color-bright);
+}
+
+.row.lesson-form-row section {
+  background-color: var(--primary-color-xxs) !important;
+}
+
+/*
+************************
+*   || XS
+*/
+.ui-layout-center.signin-bg,
+.outline-sidebar,
+.dashboard-footer,
+#courseViews .divider,
+.course-nav .dropdown-toggle.preview-link,
+#courseViews.dropdown.open .dropdown-toggle,
+#courseViews .dropdown-menu,
+ul.file-list.outline-list li.folder,
+.lesson-item.selected,
+.admin-link-row {
+  background-color: var(--primary-color-xs);
+}
+
+/*
+************************
+*   || S
+*/
+.bundle-label,
+.notes-holder .bookmarked-card,
+.course-nav,
+.admin-link-row .link-label,
+#lesson-author,
+.handle,
+.list-toggle,
+.mentor-tabs, .photo-tabs,
+.outline-header,
+#courseSwitch .preview-link,
+#courseSwitch .dropdown-menu,
+#lessonOptions .dropdown-menu {
+  background-color: var(--primary-color-s);
+  color: var(--text-color);
+}
+
+/*
+************************
+*   || Basic
+*/
+.settings-list .table-responsive {
+  background-color: var(--primary-color);
+}
+
+/*
+************************
+*   || M
+*/
+/*
+************************
+*   || L
+*/
+.fuzzy-search, .search {
+  background-color: var(--primary-color-l);
+}
+
+.draft-badge {
+  background-color: var(--accent-color-darker);
+}
+
+/* TODO - IMPORTED FROM BASE */
+input, textarea, select,
+.student-search input[type=text],
+.font-select > span,
+.form-control {
+  background-color: var(--form-fields-color);
+  color: var(--global-font-primary-color);
+  border-color: transparent;
+}
+
+/* ********************************************
+*  || TOPBAR
+*  ********************************************
+*/
+.topbar,
+.ui-mobile-sidebar .topbar-user-info,
+.topbar .notifyHeader .dropdown-menu,
+.login .dropdown-menu {
+  background-color: var(--topbar-color);
+}
+
+.topbar .login .dropdown-menu > li > a:hover {
+  background-color: var(--topbar-color-secondary-dark);
+}
+
+.login .icon-bar {
+  background-color: var(--topbar-primary-text-color-bright);
+}
+
+/* ************************************************************************
+*  || SIDEBAR
+*  ************************************************************************
+*/
+/*
+************************
+*   || COLOR BRIGHT
+*/
+.sidebar-tabs,
+.sidebar-tabs.nav > li > a:focus,
+.ui-layout-west,
+.ui-mobile-sidebar,
+.ui-layout-west .start-text, .ui-mobile-sidebar .start-text,
+.notes-holder .bookmarked-card,
+.bookmarked-card,
+.mobile-sidebar-lnk {
+  background-color: var(--sidebar-color-bright);
+}
+
+/*
+************************
+*   || COLOR
+*/
+.courses-back,
+.float-pane,
+.float-pane .close-pane,
+.sidebar-tabs.nav-tabs > li.active > a,
+.sidebar-tabs li a:hover,
+.course-label,
+.bookmarks-toggle,
+.notes-toggle,
+.admin-link-row .admin-link-popout .dropdown-menu li > a {
+  background-color: var(--sidebar-color);
+  color: var(--sidebar-text-color-min);
+}
+
+.ui-layout-west .files-pane strong,
+.ui-mobile-sidebar .files-pane strong {
+  background-color: var(--sidebar-color);
+}
+
+/*
+************************
+*   || COLOR DARK
+*/
+/* ************************************************************************
+*  || CENTER AREA
+*  ************************************************************************
+*/
+.ui-layout-center,
+.lesson-card {
+  background-color: var(--center-color);
+}
+
+/*
+************************************************************************
+*   || TRANSPARENT
+*/
+.breadcrumb,
+.course,
+.lessson-card,
+.lesson-container,
+.card-edit-link,
+#courseViews li a, #courseViews li button,
+.lesson-item,
+.course-navigation a:hover {
+  background-color: transparent;
+}
+
+.ui-layout-west .courses-back,
+.ui-layout-west .sidebar-tabs,
+.ui-layout-west .files-pane .module-item,
+.ui-layout-west .files-pane .module-item h3,
+.ui-layout-west .file-list li ul li.selected,
+.ui-layout-west .file-list a:hover,
+.ui-layout-west .file-list a.folder-toggle:hover,
+.ui-layout-west .file-list li ul li:hover,
+.ui-layout-west li.folder > a:hover,
+.ui-mobile-sidebar .courses-back,
+.ui-mobile-sidebar .sidebar-tabs,
+.ui-mobile-sidebar .files-pane .module-item,
+.ui-mobile-sidebar .files-pane .module-item h3,
+.ui-mobile-sidebar .file-list li ul li.selected,
+.ui-mobile-sidebar .file-list a:hover,
+.ui-mobile-sidebar .file-list a.folder-toggle:hover,
+.ui-mobile-sidebar .file-list li ul li:hover,
+.ui-mobile-sidebar li.folder > a:hover {
+  background-color: transparent;
+}
+
+.dropdown-menu .preview-link:hover {
+  background-color: transparent !important;
+}
+
+.sidebar li a .draft-badge {
+  background-color: var(--accent-color-darker);
+}
+
+/*
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+BORDERS
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+_borders.scss
+*/
+input:focus, textarea:focus,
+.student-search input[type=text]:focus {
+  border-color: var(--aa-global-color-secondary) !important;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th,
+.table > tfoot > tr > th, .table > thead > tr > td,
+.table > tbody > tr > td, .table > tfoot > tr > td,
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  border-color: var(--aa-global-color-secondary);
+}
+
+.btn:focus {
+  outline: thin dotted;
+}
+
+/*
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+DEFINE MIXINS
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+_mixins.scss
+*/
+.progress-bar,
+.course-progress-footer .progress,
+.lesson-container,
+.signin .form-holder,
+.signin .signin-options,
+.signin input[type=submit],
+.course-item-body:after,
+.lesson-card,
+.lesson-card.completed,
+.app__users .profile-cover,
+.app__registrations .edit_user > div,
+.app__messages .new-message,
+.app__conversations .table-responsive,
+.app__conversations .message-box .message-body,
+.badge-row .col-sm-4, .badge-row .col-md-3,
+.sidebar .tab-content,
+.sidebar .file-list li ul li.selected,
+.sidebar li a .draft-badge,
+.sidebar li.folder > a:hover .draft-badge,
+.bookmarked-outer,
+.float-pane {
+  /*@include m.box-shadows;*/
+}
+
+.app__courses .course-item,
+.app__courses .save-btn, .app__bundles .course-item,
+.app__bundles .save-btn, .app__projects .course-item,
+.app__projects .save-btn, .app__digital_products .course-item,
+.app__digital_products .save-btn {
+  /*  @include m.box-shadows;*/
+}
+
+.app__courses .course-item {
+  box-shadow: 0 0 30px hsla(0deg, 0%, 0%, 0.1);
+}
+
+.topbar {
+  /*@include m.box-shadows($a: .1);*/
+}
+
+.ui-layout-west,
+.ui-mobile-sidebar {
+  /*@include m.box-shadows($a: .15);*/
+}
+
+/*
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ICONS
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+_icons.scss
+*/
+/*
+************************
+|| GENERAL
+*/
+.module-lessons .lesson-card h2::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--global-icon-font);
+  content: "\f138";
+  font: var(--fa-font-solid);
+  font-weight: 400;
+  font: var(--fa-font-thin);
+  margin-right: 10px;
+}
+
+/*
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+SCROLLBARS
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+_scrollbars.scss
+*/
+body::-webkit-scrollbar,
+.ui-layout-center::-webkit-scrollbar,
+input::-webkit-scrollbar, textarea::-webkit-scrollbar, iframe::-webkit-scrollbar,
+.admin-link-row::-webkit-scrollbar,
+.scroll-pane::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+  border-left: 1px solid var(--aa-global-color-primary);
+  border-right: 1px solid var(--aa-global-color-primary);
+  border-color: var(--aa-global-color-primary);
+}
+body::-webkit-scrollbar-thumb,
+.ui-layout-center::-webkit-scrollbar-thumb,
+input::-webkit-scrollbar-thumb, textarea::-webkit-scrollbar-thumb, iframe::-webkit-scrollbar-thumb,
+.admin-link-row::-webkit-scrollbar-thumb,
+.scroll-pane::-webkit-scrollbar-thumb {
+  background-color: var(--aa-global-color-secondary);
+}
+body::-webkit-scrollbar-track, body::-webkit-resizer,
+.ui-layout-center::-webkit-scrollbar-track,
+.ui-layout-center::-webkit-resizer,
+input::-webkit-scrollbar-track,
+input::-webkit-resizer, textarea::-webkit-scrollbar-track, textarea::-webkit-resizer, iframe::-webkit-scrollbar-track, iframe::-webkit-resizer,
+.admin-link-row::-webkit-scrollbar-track,
+.admin-link-row::-webkit-resizer,
+.scroll-pane::-webkit-scrollbar-track,
+.scroll-pane::-webkit-resizer {
+  background-color: var(--aa-global-color-primary);
+}
+body,
+.ui-layout-center,
+input, textarea, iframe,
+.admin-link-row,
+.scroll-pane {
+  scrollbar-face-color: var(--aa-global-color-secondary);
+  scrollbar-track-color: var(--aa-global-color-primary);
+}
+
+/*
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+*TEXT COLORS
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+_text-colors.scss
+*/
+/* *******************
+*   GENERAL
+*/
+.module-lessons .lesson-card .card-edit-link a {
+  color: var(--text-color-min);
+}
+
+.course-item .product-price,
+.save-btn,
+.course .module-item h3, .bundle .module-item h3,
+.lesson-list-head,
+.lesson-item a,
+.lesson-stats i,
+.breadcrumb li,
+.list-toggle,
+.course-nav li:first-child {
+  color: var(--text-color-bright);
+}
+
+/* *************************
+*   GENERAL
+*/
+body,
+p,
+h1, h2, h3, h4, h5, h6,
+.lesson h1, .lesson h2, .lesson h3, .lesson h4, .lesson h5, .lesson h6, .lesson p, .lesson blockquote,
+.course h1, .course h2, .course h3, .course h4, .course h5, .course h6, .course p, .course blockquote,
+.course-item h1, .course-item h2, .course-item h3, .course-item h4, .course-item h5, .course-item h6, .course-item p, .course-item blockquote,
+.bundle h1, .bundle h2, .bundle h3, .bundle h4, .bundle h5, .bundle h6, .bundle p, .bundle blockquote,
+h1.message-header,
+input, button, select, textarea,
+.lesson-form textarea,
+.font-select > span,
+::placeholder,
+pre,
+.lesson-header .lesson-title,
+.lesson h1,
+.course .module-item h1, .bundle .module-item h1,
+.course .module-item h2, .bundle .module-item h2,
+.course .module-item h3, .bundle .module-item h3,
+.sec-btn,
+.breadcrumb li a,
+.breadcrumb li:nth-of-type(2) a,
+.course-description,
+.lesson-header .author,
+.lesson-card a h2,
+.dropdown-menu .preview-link:hover,
+.ui-layout-west,
+.row.stats-top-row p,
+.row.stats-top-row p strong,
+#courseSwitch .dropdown-menu li a,
+#courseViews li a, #courseViews li button,
+.outline-list h4,
+ul.file-list li,
+.options-dropdown,
+#lessonOptions i {
+  color: var(--text-color);
+}
+
+.course-edit-outline .folder-toggle,
+.module-item h3 a,
+.dropdown-menu .preview-link:hover {
+  color: var(--text-color-dark);
+}
+
+/* *******************
+*   TOPBAR
+*/
+.topbar .second-nav li a,
+.topbar .profile-link,
+.topbar .login .icon-bar,
+.topbar .login .dropdown-toggle,
+.topbar .login .dropdown-menu > li > a,
+.topbar .login .dropdown-menu > li > a i {
+  color: var(--topbar-primary-text-color);
+}
+.topbar .second-nav li a:hover,
+.topbar .profile-link:hover,
+.topbar .login .icon-bar:hover,
+.topbar .login .dropdown-toggle:hover {
+  color: var(--topbar-secondary-text-color);
+}
+
+.dropdown-menu > li > a,
+#courseViews li i {
+  color: var(--topbar-primary-text-color-bright);
+}
+
+/* *******************
+*   SIDEBAR
+*/
+.sidebar li a,
+.notes-holder .bookmarked-card,
+.float-pane h3 i,
+.bookmarked-card h6 i,
+.float-pane .close-pane {
+  color: var(--sidebar-text-color-bright);
+}
+
+.sidebar.active-course li a,
+.sidebar.active-course .folder-toggle,
+.sidebar .file-list li i, .sidebar .file-list p i,
+.sidebar-tabs li a i,
+.files-pane strong,
+.float-pane h3 {
+  color: var(--sidebar-text-color);
+}
+
+.files-pane .module-item h3,
+.sidebar ul > li > a:hover,
+.sidebar .file-list li.project-link.selected a,
+.sidebar-tabs li a:hover,
+.admin-link-row .link-label {
+  color: var(--sidebar-text-color-dark);
+}
+
+.mobile-login-menu .mobile-sidebar-lnk {
+  color: var(--sidebar-text-color-dark) !important;
+}
+
+.sidebar ul > li > a:hover i {
+  color: var(--sidebar-text-color-dark) !important;
+}
+
+hr {
+  border-color: var(--aa-global-color-secondary);
+}
+
+/* *************************
+*   LINKS
+*/
+a, .lesson a, .course a {
+  color: var(--global-links-color);
+}
+
+a:hover, .lesson a:hover, .course a:hover {
+  color: var(--global-links-hover-color);
+}
+
+.bill-info, .bill-info p {
+  color: var(--global-links-color-secondary);
+}
+
+/*
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+TYPOGRAPHY
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+_typography.scss
+*/
+body,
+p {
+  font-family: var(--global-font-primary-family);
+  font-size: var(--global-font-size);
+  line-height: var(--global-line-height);
+  font-weight: var(--global-font-primary-weight);
+}
+
+.lesson h1, .lesson h2, .lesson h3, .lesson h4, .lesson h5, .lesson h6,
+.course h1, .course h2, .course h3, .course h4, .course h5, .course h6,
+.course-item h1, .course-item h2, .course-item h3, .course-item h4, .course-item h5, .course-item h6,
+.bundle h1, .bundle h2, .bundle h3, .bundle h4, .bundle h5, .bundle h6,
+h1.message-header {
+  font-family: var(--global-font-secondary-family);
+}
+
+.lesson, .lesson p,
+.course, .course p,
+.lesson article {
+  font-family: var(--global-font-text-family);
+  font-size: var(--global-font-size);
+  font-weight: var(--global-font-text-weight);
+}
+
+.lesson h1, .lesson h2, .lesson h3, .course h1, .course h2, .course h3 {
+  font-weight: var(--global-font-secondary-weight);
+  line-height: var(--global-line-height);
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.lesson h1, .course h1 {
+  font-size: calc(3.2rem * var(--font-scale-ratio));
+}
+.lesson h2, .course h2 {
+  font-size: calc(2.7rem * var(--font-scale-ratio));
+}
+.lesson h3, .course h3 {
+  font-size: calc(2.2rem * var(--font-scale-ratio));
+}
+
+/*
+===============
+SIDEBAR
+===============
+*/
+.ui-mobile-sidebar,
+.ui.ui-layout-west.sidebar {
+  font-size: var(--sidebar-font-size);
+}
+.ui-mobile-sidebarul, .ui-mobile-sidebar li a,
+.ui.ui-layout-west.sidebarul,
+.ui.ui-layout-west.sidebar li a {
+  font-size: var(--sidebar-font-size);
+}
+
+/* *******************
+*   MAIN
+*/
+/* *******************
+*   MAIN
+*/
+#lessonOptions .dropdown-menu .list-inline {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#lessonOptions .dropdown-menu li > a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.lesson-item {
+  border-radius: 0;
+}
+
+/* *******************
+*   SIDEBAR
+*/
+.sidebar .file-list li.project-link.selected a {
+  color: var(--sidebar-text-color);
+  font-weight: 900;
+}
+
+.admin-link-row .link-label {
+  text-align: center;
+  width: 86%;
+  margin: 6px auto;
+  border-radius: 4px;
+}
+
+.navbar {
+  display: none;
+}
+
+.main-content {
+  margin-top: 0;
+  padding-top: 50px;
+}
+
+.main-content .buy-row,
+.main-content .product-price,
+.upsell-banner {
+  background-color: transparent;
+  color: var(--text-color-dark);
+}
+
+/*
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+BASE - Base elements
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+_base.scss
+*/
+/*
+-------------------------------------------------------------
+
+FOOTER
+
+-------------------------------------------------------------
+parts/_footer.scss
+*/
+footer {
+  font-size: calc(var(--global-font-size) * 0.8);
+  border: none;
+}
+footer, footer p {
+  color: var(--global-font-primary-color);
+}
+
+/*
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+HEADER
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+parts/_header.scss
+*/
+.topbar .login .dropdown-menu > li > a, .topbar .second-nav li a, .topbar .notifyHeader .empty-message,
+.topbar .notifyHeader .dropdown-menu,
+.topbar .notifyHeader .dropdown-menu a {
+  font-family: var(--topbar-links-primary-family);
+  font-weight: var(--topbar-links-primary-weight);
+}
+
+.topbar h1 a,
+.navbar > .container a {
+  font-size: calc(var(--global-font-size) * 1.3) !important;
+  line-height: calc(var(--global-line-height) * 2.8) !important;
+  margin-left: 36px !important;
+  text-shadow: none;
+  font-weight: 900;
+  color: var(--topbar-links-primary-color);
+  font-family: var(--topbar-logo-family);
+  font-weight: var(--topbar-logo-weight);
+  text-transform: var(--topbar-logo-transform);
+  box-sizing: border-box;
+  text-shadow: none;
+}
+.topbar h1 a:hover,
+.navbar > .container a:hover {
+  text-shadow: none !important;
+  /* color: var(--aa-global-color-secondary);
+  opacity: 1; */
+}
+
+.topbar {
+  position: relative;
+  font-family: var(--topbar-links-primary-family);
+  font-weight: var(--topbar-links-primary-weight);
+  /* Links color */
+  /* Secondary Links color */
+  /*
+  {
+      color: var(--topbar-links-color-secondary);
+  }*/
+  /* Links on Hover */
+  /* Burger */
+  /* Top bar Links */
+  /* Avatar img */
+  /* Dropdown menu */
+  /* Logout */
+}
+.topbar h1 {
+  line-height: auto;
+}
+.topbar h1 a, .topbar h1 a:hover,
+.topbar .second-nav li a, .topbar .second-nav li a:hover,
+.topbar .icon-nav i, .topbar .icon-nav i:hover, .topbar .help-btn {
+  color: var(--topbar-links-primary-color);
+}
+.topbar .icon-nav a:hover,
+.topbar .second-nav li a:hover,
+.topbar .profile-link:hover,
+.topbar .help-btn:hover {
+  color: var(--topbar-links-hover-color-primary);
+}
+.topbar .theme-btn {
+  top: calc(var(--topbar-padding-vertical) - 12px);
+}
+.topbar .notifyHeader .open {
+  background-color: var(--topbar-color-secondary);
+}
+.topbar .notifyHeader .empty-message,
+.topbar .notifyHeader .dropdown-menu,
+.topbar .notifyHeader .dropdown-menu a {
+  border-color: var(--topbar-color-secondary);
+  color: var(--topbar-links-primary-color);
+}
+.topbar .notifyHeader .dropdown-menu {
+  font-size: var(--topbar-links-size);
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.topbar .notifyHeader li:first-child {
+  color: #FFF;
+  padding: 6px 4px;
+  text-align: center;
+  border-radius: 5px 0 0 0;
+  border-color: var(--topbar-color-secondary);
+}
+.topbar .login .icon-bar,
+.topbar .mob-side-toggle {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+.topbar .second-nav li a {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: var(--topbar-links-size);
+}
+.topbar .profile-link img {
+  margin-right: 0;
+  border-radius: 50%;
+}
+.topbar .profile-link:hover {
+  background-color: transparent;
+}
+.topbar .login {
+  border: none;
+  /* Icons */
+  /* Logout */
+}
+.topbar .login .dropdown-menu {
+  border: none;
+  left: -176px;
+  top: calc(var(--topbar-height-px) + 8px);
+  min-width: 200px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-size: 1.3rem;
+}
+.topbar .login .dropdown-menu > li > a {
+  padding: 6px 20px;
+}
+.topbar .login .dropdown-menu > li > a:hover {
+  background-color: transparent;
+  color: red; /* TODO */
+}
+.topbar .login .dropdown-menu .dropdown-label {
+  color: var(--global-font-secondary-color);
+  padding: 5px;
+  margin-top: 10px;
+  display: inline-block;
+}
+.topbar .login i {
+  color: #000;
+}
+.topbar .login .login .dropdown-toggle {
+  padding-top: 11px;
+}
+.topbar .login .dropdown-menu > li:last-child > a:before {
+  text-align: right;
+  margin: 0 10px 0 5px;
+}
+.topbar .login .dropdown-menu > li:last-child > a:before,
+.topbar .mobile-login-menu > li:last-child > a:before {
+  content: "⍇";
+  font-weight: 900;
+}
+.topbar .mobile-login-menu > li:last-child > a:before {
+  margin: 0 8px 0 -3px;
+}
+
+/*
+======================================================
+MEDIA QUERIES
+======================================================
+*/
+/*
+=========
+LAYOUT
+=========
+*/
+@media (min-width: 722px) {
+  /* Module "Header" ? */
+  .topbar {
+    height: var(--topbar-height-px);
+    padding-top: var(--topbar-padding-vertical);
+    padding-bottom: var(--topbar-padding-vertical);
+    /* Courses, Discussions */
+    /* Avatar */
+    /* Courses, Discussions */
+    /* Notifications, Inbox */
+    /* New Message */
+    /* Hamburger button */
+    /* Dropdown divided */
+  }
+  .topbar .topbar-user-info,
+.topbar .second-nav,
+.topbar .icon-nav,
+.topbar .help-btn {
+    margin-top: calc(var(--topbar-padding-vertical));
+  }
+  .topbar .topbar-user-info {
+    top: 5px;
+    right: calc(var(--topbar-links-right-offset) + 156px);
+    /* Avatar img */
+  }
+  .topbar .topbar-user-info .profile-link img {
+    width: 40px;
+    height: 40px;
+  }
+  .topbar .topbar-user-info .profile-link span {
+    padding-left: 5px;
+    text-transform: uppercase;
+    font-size: x-small;
+  }
+  .topbar .second-nav {
+    top: 12px;
+  }
+  .topbar .icon-nav {
+    top: 14px;
+    right: calc(var(--topbar-links-right-offset) + 96px);
+  }
+  .topbar .help-btn {
+    top: 10px;
+    background-color: transparent;
+    right: calc(var(--topbar-links-right-offset) + 65px);
+  }
+  .topbar .login {
+    height: calc(var(--topbar-height-px) + var(--topbar-padding-vertical) * 2);
+    padding: var(--topbar-padding-vertical);
+    background-color: var(--topbar-burger-bg-color);
+  }
+  .topbar .dropdown-menu .divider {
+    display: none !important;
+  }
+  .ui-layout-west,
+.ui-layout-center,
+.admin-link-row,
+.outline-sidebar {
+    top: var(--topbar-height-calc);
+    padding-top: var(--topbar-bottom-offset);
+  }
+}
+@media (max-width: 721px) {
+  .topbar .second-nav {
+    padding-top: 6px;
+    left: 138px;
+    /* Top bar Links */
+  }
+  .topbar .second-nav i {
+    display: none;
+  }
+  .topbar .second-nav li a {
+    /*border-left: 1px solid #666;
+    padding-left: 14px;
+    font-weight:300;*/
+  }
+}
+.navbar-app {
+  background-image: linear-gradient(to right, var(--topbar-color-primary), var(--topbar-color-primary)) !important;
+}
+.navbar-app.navbar-default .navbar-nav > li > a {
+  border: none;
+  font-weight: 100;
+  font-size: calc(var(--global-font-size) * 1.1) !important;
+  padding: 14px 0;
+  color: var(--topbar-links-primary-color);
+}
+.navbar-app .navbar-nav > li:hover {
+  background: none;
+}
+.navbar-app .navbar-brand {
+  padding-top: 14px !important;
+  color: var(--topbar-links-primary-color) !important;
+}
+
+.navbar-app + .container > .row {
+  padding-top: 20px;
+}
+
+/*
+-------------------------------------------------------------
+
+MAIN - TODO -clean, move to scss
+-------------------------------------------------------------
+parts/_main.scss
+*/
+.ui-layout-center body, .ui-layout-center p,
+.ui-layout-center .lesson p, .ui-layout-center .course p, .ui-layout-center .bundle p {
+  font-family: var(--global-font-primary-family);
+  font-size: var(--global-font-size);
+  line-height: var(--global-line-height);
+  font-weight: var(--global-font-primary-weight);
+}
+.ui-layout-center .lesson, .ui-layout-center .course, .ui-layout-center .bundle, .ui-layout-center .course-description {
+  font-size: var(--content-font-size);
+  line-height: var(--content-line-height);
+}
+.ui-layout-center .lesson div, .ui-layout-center .lesson p, .ui-layout-center .lesson li, .ui-layout-center .course div, .ui-layout-center .course p, .ui-layout-center .course li, .ui-layout-center .bundle div, .ui-layout-center .bundle p, .ui-layout-center .bundle li, .ui-layout-center .course-description div, .ui-layout-center .course-description p, .ui-layout-center .course-description li {
+  font-size: var(--content-font-size);
+  line-height: var(--content-line-height);
+}
+
+.breadcrumb {
+  margin: 0 0 60px;
+  padding: 10px;
+  overflow: visible;
+  height: auto;
+  border-bottom: 1px solid #EFEFEF;
+}
+.breadcrumb li, .breadcrumb li a, .breadcrumb li a:hover, .breadcrumb li:nth-of-type(1) a, .breadcrumb .breadcrumb li:nth-of-type(2) a {
+  font-size: var(--topbar-links-size);
+  color: var(--lesson-info-text-color-primary);
+}
+
+.alert-info {
+  box-shadow: 0 2px 1px 0 rgba(0, 44, 78, 0.2), 0 14px 11px -8px rgba(0, 47, 84, 0.3);
+  -moz-box-shadow: 0 2px 1px 0 rgba(0, 44, 78, 0.2), 0 14px 11px -8px rgba(0, 47, 84, 0.3);
+}
+
+.lesson-progress {
+  font-size: calc(var(--global-font-size) * 1.2);
+  margin: 0 auto;
+  padding: 0 20px 23px;
+  border-radius: 30px;
+  opacity: 0.7;
+}
+.lesson-progress ol.progtrckr li.progtrckr-done, .lesson-progress ol.progtrckr li.progtrckr-todo {
+  color: var(--topbar-links-primary-color);
+}
+.lesson-progress ol.progtrckr li.progtrckr-todo {
+  opacity: 0.4;
+}
+
+.lesson-container {
+  background-color: var(--lesson-container-color-primary);
+  padding-bottom: 30px;
+  margin-bottom: 120px;
+}
+
+.bundle {
+  background-color: var(--lesson-container-color-primary);
+}
+
+.course,
+.product-col {
+  background-color: var(--lesson-container-color-primary);
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+/*
+------------
+LESSON METAS
+------------
+*/
+.product-col .buy-row, .product-col .product-price,
+.course .buy-row,
+.course .product-price {
+  background-color: var(--highlight-color-primary);
+}
+
+/* Progress bar */
+.progress-bar {
+  background-color: hsl(132deg, 55%, 60%);
+}
+
+.course-progress-footer .progress,
+.course-progress-footer .progress-small {
+  background-color: var(--aa-global-color-secondary);
+  border-radius: 0;
+}
+
+/*
+=========
+#TEXT FORMATTING
+=========
+*/
+.lesson,
+.course .course-description {
+  font-size: var(--content-font-size);
+}
+.lesson h1, .lesson h2, .lesson h3, .lesson h4, .lesson h5,
+.course .course-description h1,
+.course .course-description h2,
+.course .course-description h3,
+.course .course-description h4,
+.course .course-description h5 {
+  line-height: var(--content-line-height);
+  font-weight: 700;
+  margin: 50px 0 36px;
+}
+.lesson h1,
+.course .course-description h1 {
+  font-size: calc(var(--content-font-size) * 3.2);
+}
+.lesson h2,
+.course .course-description h2 {
+  font-size: calc(var(--content-font-size) * 2.7);
+}
+.lesson h3,
+.course .course-description h3 {
+  font-size: calc(var(--content-font-size) * 2.2);
+}
+.lesson h4,
+.course .course-description h4 {
+  font-size: calc(var(--content-font-size) * 1.8);
+}
+.lesson h5,
+.course .course-description h5 {
+  font-size: calc(var(--content-font-size) * 1.6);
+}
+.lesson blockquote,
+.course .course-description blockquote {
+  font-size: calc(var(--content-font-size) * 1.1);
+  font-family: Georgia;
+  padding: 0 0 0 36px;
+  border-left: 2px solid var(--global-font-primary-color);
+  margin: 40px 0;
+}
+
+.module-item {
+  margin-bottom: 22px;
+}
+.module-item h3 {
+  font-weight: 700;
+}
+.module-item .module-lessons {
+  padding-top: 16px;
+  border-top: 1px solid #AFAFAF;
+}
+.module-item .module-lessons .lesson-card {
+  margin-left: 0;
+  margin-bottom: 0;
+  height: auto;
+}
+.module-item .module-lessons .lesson-card a {
+  line-height: inherit;
+}
+.module-item .module-lessons .lesson-card h2 {
+  font-size: calc(var(--content-font-size));
+  font-weight: var(--global-font-weight);
+  padding: 6px 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+.module-item .module-lessons .lesson-card h2 + p {
+  display: none;
+}
+.module-item .module-lessons .lesson-card .card-edit-link a {
+  margin-top: 10px;
+}
+.module-item .module-lessons .lesson-card .card-thumbnail,
+.module-item .module-lessons .lesson-card h2 i {
+  display: none;
+}
+
+/*
+===========================
+LESSON PAGE
+===========================
+*/
+/* Course Thumbnail */
+.ui-layout-west .course-image-preview {
+  padding-top: 0;
+}
+.ui-layout-west .course-image-preview img {
+  position: relative;
+}
+
+/* Bookmark Lesson */
+.save-btn {
+  top: 26px;
+  color: #CFCFCF;
+  right: 15px;
+  padding: 10px 16px;
+}
+
+/*
+------------
+LESSON HEADER
+------------
+*/
+.lesson-header {
+  /* Lesson Title */
+  /* Lesson title's icon */
+}
+.lesson-header h1,
+.lesson-header .lesson-title {
+  padding: 0;
+  font-size: calc(var(--global-font-size) * 2.8);
+  line-height: 1.3em;
+  max-width: 80%;
+  margin: 0 auto 40px;
+  padding: 46px 20px 30px 20px;
+  text-align: center;
+}
+.lesson-header h1 i {
+  display: none !important;
+}
+.lesson-header .admin-options {
+  padding: 10px 20px;
+  background-color: var(--aa-global-color-primary);
+  font-size: calc(var(--global-font-size) * 0.9);
+  line-height: 1em;
+  right: 0;
+  border: 1px solid var(--aa-global-color-secondary);
+  color: var(--global-font-primary-color);
+}
+
+/*
+------------
+LESSON METAS
+------------
+*/
+.lesson-info {
+  background-color: var(--lesson-info-color-primary);
+  padding-top: 10px;
+  margin-bottom: 50px;
+  /* Lesson Title */
+  /* COLUMN LEFT */
+  /* COLUMN RIGHT */
+}
+.lesson-info, .lesson-info p, .lesson-info span,
+.lesson-info h1, .lesson-info h2, .lesson-info h3, .lesson-info h4, .lesson-info h5, .lesson-info h6,
+.lesson-info .lesson-header .author {
+  color: var(--lesson-info-text-color-primary) !important;
+  font-size: calc(var(--global-font-size) * 1.2) !important;
+}
+.lesson-info .l-info-left {
+  padding-left: 10px;
+  /* Author thumbnail */
+  /* Lesson By */
+}
+.lesson-info .l-info-left .author-thumb {
+  width: 60px;
+  height: 60px;
+}
+.lesson-info .l-info-left .author {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.lesson-info .l-info-right {
+  padding: 0;
+  border: none;
+  /* Objective */
+  /* Reading Time */
+}
+.lesson-info .l-info-right .objective-label {
+  background-color: var(--sidebar-tabs-color-primary);
+  border-radius: 6px;
+}
+.lesson-info .l-info-right .reading-time-wrap {
+  padding-left: 0 !important;
+}
+.lesson-info .l-info-right i.fa-clock-o {
+  margin-left: 0 !important;
+}
+
+/*
+------------
+LESSON FOOTER
+------------
+*/
+.lesson {
+  padding-bottom: 70px;
+}
+
+/*
+------------
+LESSON FOOTER
+------------
+*/
+.lesson-footer {
+  background-color: transparent;
+  border: none;
+  margin-top: 0;
+}
+.lesson-footer a {
+  padding: 10px 20px;
+}
+
+/*
+------------
+MEDIA QUERIES
+------------
+*/
+@media (max-width: 721px) {
+  .lesson-header {
+    text-align: center;
+  }
+  .lesson-header .objective-label {
+    float: inherit;
+  }
+  .lesson-header .learning-objective {
+    display: inline-block;
+    padding: 10px 20px;
+    line-height: 15px;
+    margin-top: 12px;
+  }
+}
+.ui-layout-west .files-pane strong,
+.ui-layout-west .dropdown-label,
+.ui-mobile-sidebar .files-pane strong,
+.ui-mobile-sidebar .dropdown-label {
+  margin: 20px 15px 4px;
+  padding: 4px 6px;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: calc(var(--global-font-size) * 0.8);
+  line-height: calc(var(--global-line-height) * 1);
+  text-align: center;
+}
+.ui-layout-west .file-list li.project-link.selected a,
+.ui-mobile-sidebar .file-list li.project-link.selected a {
+  font-weight: 600;
+}
+
+/*
+==============================================
+LOGIN PAGE
+==============================================
+pages/_login.scss
+*/
+:root {
+  --topbar-l-factor: 90;
+}
+
+body.sessions .ui-layout-center.signin-bg {
+  background-image: var(--login-bg-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body.sessions .signin {
+  box-shadow: 0 31px 53px -27px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0 31px 53px -27px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0 31px 53px -27px rgba(0, 0, 0, 0.35);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+body.sessions .signin h1 {
+  background: red;
+  display: none;
+}
+body.sessions .signin, body.sessions .signin p, body.sessions .signin label {
+  color: #000;
+}
+body.sessions .signin .signin-options {
+  text-align: center;
+  border: none;
+}
+body.sessions .signin .form-holder {
+  padding-top: 60px;
+}
+body.sessions .signin .form-holder h1,
+body.sessions .signin .form-holder h2 {
+  font-size: 2.4rem;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-weight: 300;
+  color: #000;
+}
+body.sessions .signin .form-holder h3 {
+  font-size: var(--global-font-size);
+  text-transform: uppercase;
+  text-align: center;
+  color: #AFAFAF;
+}
+body.sessions .signin .newuser {
+  margin-top: 10px;
+}
+body.sessions .signin label {
+  font-weight: 300;
+  margin-top: 6px;
+}
+
+/* TODO BELOW */
+/*
+body.sessions{
+
+
+    .ui-layout-center.signin-bg {
+
+      background-size: cover;
+    }
+
+}
+*/
+/*
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+THEME CONSTRUCTOR
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+_theme_constructor.scss
+*/
+/* ------------------- Do NOT Edit ------------------- */
+/* ------------------- Do NOT Edit ------------------- */
+/* ------------------- Do NOT Edit ------------------- */
+/* Get/Set Theme Default */
+/* Imports */
+/* Theme defaults */
+/* -------- Start Editing BELOW this line --------*/
+/* -------- Start Editing BELOW this line --------*/
+/* -------- Start Editing BELOW this line --------*/
+/*
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+THEME CONSTRUCTOR - STYLESHEET
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+_index.scss
+*/
+/*
+@use 'pages/_admin';
+@use 'pages/_all-courses';
+@use 'pages/_bundle';
+@use 'pages/_checkout';
+@use 'pages/_conversations';
+@use 'pages/_course';
+@use 'pages/_landing';
+@use 'pages/_course-edit';
+
+// @use 'pages/_lessons';
+*/
+/*
+@use 'pages/_messageboards';
+@use 'pages/_messages';
+@use 'pages/_notifications';
+@use 'pages/_preview';
+@use 'pages/_profile-edit';
+@use 'pages/_profile';
+@use 'pages/_projects';
+@use 'pages/_users';
+// @use 'pages/_profile-edit';
+// @use 'pages/_admin';
+*/
+/* Setup Theme Variables */
+:root {
+  /*
+  * ---------------------
+  * HELPERS
+  * ---------------------
+  */
+  --unit-min: 0;
+  --unit-xxs: .04;
+  --unit-xs: .1;
+  --unit-s: .35;
+  --unit-m: .5;
+  --unit-l: .65;
+  --unit-xl: .9;
+  --unit-xxl: .96;
+  --unit-max: 2;
+  --perc-min: --unit-min;
+  --perc-xxs: calc(var(--unit-xxs) * var(--u, 100%));
+  --perc-xs: calc(var(--unit-xs) * var(--u, 100%));
+  --perc-s: calc(var(--unit-s) * var(--u, 100%));
+  --perc-m: calc(var(--unit-m) * var(--u, 100%));
+  --perc-l: calc(var(--unit-l) * var(--u, 100%));
+  --perc-xl: calc(var(--unit-xl) * var(--u, 100%));
+  --perc-xxl: calc(var(--unit-xxl) * var(--u, 100%));
+  --perc-max: calc(var(--unit-max) * var(--u, 100%));
+  /* *******************
+  COLORS
+  ******************** */
+  /*
+  // GLOBAL
+  --aa-global-color-primary: #FFF;
+  --aa-global-color-secondary: #FFF;
+
+  // TOPBAR
+  --topbar-color-primary: var(--aa-global-color-secondary);
+  --topbar-color-secondary: var(--aa-global-color-primary);
+  --topbar-burger-bg-color: transparent;
+
+  // SIDEBAR
+  --sidebar-color-primary: var(--aa-global-color-primary);
+  --sidebar-color-secondary: transparent;
+  --float-pane-color-primary: #282828;
+  --float-pane-color-secondary: #282828;
+  --sidebar-tabs-color-primary: rgba(0,0,0,0.05);
+  */
+  --layout-center-color-primary: var(--aa-global-color-secondary);
+  --breadcrumb-color-primary: transparent;
+  --lesson-container-color-primary: transparent;
+  --lesson-info-color-primary: #fad5d52e;
+  --form-fields-color: #FFF;
+  --highlight-color-primary: #335477;
+  --login-bg-image: url("https://images.unsplash.com/photo-1487700160041-babef9c3cb55?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1035&q=80");
+  /* *******************
+  TYPOGRAPHY
+  ******************** */
+  --font-scale-ratio: 1;
+  --line-height-ratio: 1;
+  --global-font-size: calc(1.2rem * var(--font-scale-ratio));
+  --global-line-height: calc(1.2em * var(--line-height-ratio));
+  --global-font-primary-family: "Roboto", sans-serif;
+  --global-font-primary-color: #000;
+  --global-font-primary-weight: 400;
+  --global-font-secondary-family: var(----global-font-primary-family);
+  --global-font-secondary-color: var(--global-font-primary-color);
+  --global-font-secondary-weight: 600;
+  --global-font-text-family: var(--global-font-primary-family);
+  --global-font-text-color: var(--global-font-secondary-color);
+  --global-font-text-weight: 500;
+  --global-font-accent-family: "Roboto";
+  --global-font-accent-color: var(--global-font-secondary-color);
+  --global-font-accent-weight: 500;
+  /* *******************
+  LINKS
+  ******************** */
+  --global-links-color-primary: #f68812;
+  --global-links-hover-color-primary: #c1c521;
+  --global-links-color-secondary: #000;
+  --global-links-hover-color-secondary: #9198d3;
+  --topbar-links-primary-family: var(--global-font-primary-family);
+  --topbar-links-primary-color: var(--topbar-primary-text-color);
+  --topbar-links-primary-weight: var(--global-font-primary-weight);
+  --topbar-links-hover-color-primary: #9198d3;
+  --topbar-links-color-secondary: #6C6C6C;
+  --topbar-burger-color: var(--topbar-links-primary-color);
+  --topbar-burger-hover-color: var(--topbar-links-hover-color-primary);
+  --topbar-links-size: calc(1.1rem * var(--font-scale-ratio));
+  --topbar-logo-family: var(--global-font-secondary-family);
+  --topbar-logo-color: var(--topbar-links-primary-color);
+  --topbar-logo-weight: var(--topbar-links-primary-weight);
+  --topbar-logo-transform: uppercase;
+  --sidebar-text-color-primary: var(--global-font-primary-color);
+  --sidebar-links-color-primary: var(--sidebar-text-color-primary);
+  --sidebar-links-hover-color-primary: #7187dd;
+  --sidebar-links-selected-color-primary: #7187dd;
+  --sidebar-links-icon-color-primary: var(--sidebar-links-color-primary);
+  --sidebar-font-size: calc(1.3rem * var(--font-scale-ratio));
+  --lesson-info-text-color-primary: #333;
+  --content-font-size: calc(1.7rem * var(--font-scale-ratio));
+  --content-line-height: calc(1.7em * var(--line-height-ratio));
+  /* DO NOT MODIFY */
+  --topbar-padding-vertical: 10px;
+  --topbar-height:46;
+  --topbar-height-px: calc(var(--topbar-height) * 1px);
+  --topbar-height-calc: calc(var(--topbar-height-px) + (var(--topbar-padding-vertical) * 2));
+  --topbar-bottom-offset: 0px;
+  --topbar-links-right-offset: 0px;
+}
+
+/*
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+BREADCRUMB
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+_breadcrumb.scss
+*/
+.breadcrumb {
+  border: none;
+  max-width: 850px;
+  margin: 30px auto 10px;
+  text-align: center;
+}
+
+.dropdown-menu .divider {
+  display: none;
+}
+
+.btn,
+.submit-btn.btn,
+.btn.course-btn,
+input, textarea,
+.sidebar .tab-content,
+.sidebar li a .draft-badge,
+.float-pane,
+.bookmarked-outer,
+.sidebar .file-list li ul li.selected,
+.course, .bundle,
+.course-item,
+.lesson-card,
+.lesson-container,
+.card-edit-link,
+.new-course-btn,
+.chart-holder,
+.launch-checklist,
+.activity-feed,
+.admin-link-row,
+.admin-link-row .link-label,
+.kb-link {
+  box-shadow: none;
+}
+
+.topbar h1 a,
+.ui-layout-west .start-text,
+.ui-mobile-sidebar .start-text,
+.notes-holder .bookmarked-card {
+  text-shadow: none;
+}
+
+.sidebar .file-list li.project-link.selected {
+  animation: none;
+}
+
+.activity-feed {
+  padding: 0;
+}
+
+#courseViews .dropdown-menu,
+.file-list .panel-body,
+.search-field-holder .search,
+input, button, select, textarea,
+#lessonOptions .dropdown-menu .list-inline,
+ul.file-list.outline-list li,
+.course-navigation,
+.course-navigation a,
+.mentor-tabs, .photo-tabs,
+.mentor-tabs.nav-tabs > li.active > a,
+.mentor-tabs.nav-tabs > li.active > a:hover,
+.mentor-tabs.nav-tabs > li.active > a:focus,
+.photo-tabs.nav-tabs > li.active > a,
+.photo-tabs.nav-tabs > li.active > a:hover,
+.photo-tabs.nav-tabs > li.active > a:focus {
+  border: none;
+}
+
+/* Dropdown menu */
+.login .dropdown-menu,
+.lesson-card,
+.lesson-container,
+.alert,
+.signin,
+.signin .form-holder,
+.signin .signin-options {
+  border-radius: 0;
+}
+
+/*
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+SIDEBAR
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+_sidebar.scss
+
+@use "../_mixins" as m;
+
+// -------------------------------------------
+
+
+/*
+==============================================
+MOBILE SIDEBAR
+==============================================
+*/
+.ui-mobile-sidebar {
+  /*
+  =====================
+  Notifications, Messages
+  =====================
+  */
+  /*
+  =====================
+  ADMIN MENU
+  =====================
+  */
+  /* Borders to separate */
+}
+.ui-mobile-sidebar .topbar-user-info {
+  padding: 10px 10px;
+  margin: 0;
+  text-align: center;
+}
+.ui-mobile-sidebar .mobile-sidebar-lnk {
+  border: none;
+}
+.ui-mobile-sidebar #mobile-1 > ul:first-child {
+  border-bottom: 1px solid #000;
+  padding-bottom: 10px;
+}
+.ui-mobile-sidebar .mobile-login-menu {
+  border-top: 1px solid #000;
+}
+.ui-mobile-sidebar .mobile-login-menu li {
+  list-style: none;
+}
+.ui-mobile-sidebar .mobile-login-menu > li:first-child {
+  margin-top: 10px;
+}
+.ui-mobile-sidebar #mobile-1 > ul:first-child,
+.ui-mobile-sidebar .mobile-login-menu {
+  border-width: 2px;
+  border-color: var(--sidebar-color);
+}
+
+/*
+======================================================
+SIDEBAR
+======================================================
+*/
+.ui-layout-west {
+  box-sizing: border-box;
+  /* Sidebar Container */
+  /*
+  ======================================================
+  MOBILE & DESKTOP SIDEBAR
+  ======================================================
+  */
+  /* List of Lessons */
+  /* Completed Icon */
+  /* Icons */
+  /* Bottom Buttons */
+}
+.ui-layout-west .tab-content {
+  height: calc(100% - 126px);
+}
+.ui-layout-west .tab-content .tab-pane {
+  padding: 18px;
+  /* List of Lessons */
+}
+.ui-layout-west .tab-content .tab-pane ul.file-list {
+  padding-left: 0;
+  /* Lessons container */
+}
+.ui-layout-west .tab-content .tab-pane ul.file-list .simplebar-content {
+  padding-left: 0 !important;
+}
+.ui-layout-west .tab-content .tab-pane ul.file-list .panel-body {
+  border: none;
+  margin: 0;
+}
+.ui-layout-west .tab-content .tab-pane ul.file-list .panel-body > ul:last-child {
+  padding-bottom: 240px;
+}
+.ui-layout-west .tab-content .tab-pane ul.file-list #submenu1,
+.ui-layout-west .tab-content .tab-pane ul.file-list #submenu1mobile {
+  padding-left: 0;
+}
+.ui-layout-west ul.file-list {
+  padding-left: 0;
+}
+.ui-layout-west .panel-collapse.in .fa-check {
+  top: 1px;
+  left: -22px;
+  width: 14px;
+  font-size: 1.1rem;
+}
+.ui-layout-west .panel-body ul > li > a i {
+  width: 8px;
+}
+.ui-layout-west .float-pane {
+  top: 84px;
+}
+.ui-layout-west .sidebar-tabs li a {
+  padding: 20px 0;
+}
+
+/* All courses | Course Page > Course name */
+/* Course Title above list of lessons*/
+/* .ui-layout-west .file-list li.project-link.selected,
+.ui-layout-west.active-course .folder-toggle .active-title {
+  font-weight:900;
+  font-size: 1.2rem;
+  padding: 7px 10px;
+} */
+/* All courses | Course Page > Course name */
+/* .ui-layout-west .file-list li.project-link.selected{
+  border-left:4px solid gold;
+} */
+/* Course Title above list of lessons*/
+.ui-layout-west.active-course .folder-toggle .active-title,
+.ui-mobile-sidebar.active-course .folder-toggle .active-title {
+  width: 100%;
+  color: var(--sidebar-text-color-primary);
+  font-size: var(--global-font-size);
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0;
+  padding: 6px 10px;
+}
+
+/* All courses - Course name */
+.ui-layout-west li.folder > a,
+.ui-layout-west .files-pane .module-item h3,
+.ui-mobile-sidebar .files-pane .module-item h3 {
+  font-size: var(--global-font-size);
+  padding-left: 0;
+}
+
+/* All Courses | Course Page | Selected Course */
+/* .ui-layout-west .file-list li.project-link.selected,
+.ui-mobile-sidebar .file-list li.project-link.selected{
+  padding: 4px 10px;
+}
+
+.ui-layout-west .file-list li.project-link.selected a,
+.ui-mobile-sidebar .file-list li.project-link.selected a{
+  color:#000;
+} */
+/* Lesson page */
+.ui-layout-west.active-course .folder .panel-body li:first-child,
+.ui-mobile-sidebar.active-course .folder .panel-body li:first-child {
+  margin-top: 0;
+}
+
+.ui-layout-west.active-course .tab-content li a,
+.ui-mobile-sidebar.active-course .tab-content li a,
+.ui-layout-west .tab-content .file-list li ul li.selected,
+.ui-mobile-sidebar .tab-content .file-list li ul li.selected {
+  line-height: inherit;
+  height: auto;
+  font-size: var(--sidebar-font-size);
+  padding: 3px 0px;
+}
+
+.ui-layout-west .file-list li ul li,
+.ui-layout-west .tab-content .file-list li ul li.selected a,
+.ui-mobile-sidebar .file-list li ul li,
+.ui-mobile-sidebar .tab-content .file-list li ul li.selected a {
+  padding: 0;
+}
+
+/* Links color */
+.ui-layout-west li.folder:not(.selected) > a,
+.ui-layout-west.active-course li a,
+.ui-mobile-sidebar li.folder:not(.selected) > a,
+.ui-mobile-sidebar.active-course li a,
+.ui-mobile-sidebar .login .dropdown-menu > li > a {
+  color: var(--sidebar-links-color-primary);
+  line-height: var(--global-line-height);
+}
+
+/* Links */
+.ui-layout-west .file-list li i, .ui-layout-west .file-list p i,
+.ui-mobile-sidebar .file-list li i, .ui-layout-west .file-list p i,
+.panel-body ul > li > a i {
+  color: var(--sidebar-links-icon-color-primary) !important;
+}
+
+/* Links Hover */
+.mobile-sidebar-lnk:hover,
+.sidebar ul > li > a:hover,
+.sidebar ul > li > a:hover i,
+.sidebar .module-lessons > li:hover .fa-check,
+.ui-mobile-sidebar.active-course li a {
+  color: var(--sidebar-links-hover-color-primary) !important;
+}
+
+.ui-layout-west .file-list li ul li.selected a,
+.ui-mobile-sidebar .file-list li ul li.selected a,
+.panel-body ul > li.selected > a i,
+.panel-body ul > li.selected .fa-check {
+  color: var(--sidebar-links-selected-color-primary) !important;
+}
+
+/*
+++++++++++++++++++++++++++++++++++
+
+HEIGHTS LIGHT THEME
+
+++++++++++++++++++++++++++++++++++
+*/
+/* Do not use all customization from _index.scss (parts, pages) yet. Leave it for later.*/
+/*
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+HEIGHTS LIGHT THEME - CUSTOM CSS
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+:root {
+  /* ---------------------------------------------------------------------------
+  * LOCAL THEME VARIABLES (Can be overwritten)
+  * ---------------------------------------------------------------------------
+  */
+  /*
+  * ---------------------
+  * PRIMARY COLOR (text, shades...)
+  * ---------------------
+  */
+  /* ======================
+  * User control
+  * ======================
+  */
+  --primary-color-h-factor: 1;
+  --primary-color-s-factor: 30;
+  --primary-color-l-factor: 99;
+  --topbar-h-factor: var(--primary-color-h-factor);
+  --topbar-s-factor: 10;
+  --topbar-l-factor: 10;
+  --sidebar-h-factor: var(--primary-color-h-factor);
+  --sidebar-s-factor: 30;
+  --sidebar-l-factor: 95;
+  --center-h-factor: var(--primary-color-h-factor);
+  --center-s-factor: 50;
+  --center-l-factor: 100;
+  --accent-h: 220;
+  --accent-s: 80%;
+  --accent-l: 10%;
+  --text-l-factor: 1;
+  --links-h: 220;
+  --links-s: 50%;
+  --links-l: 50%;
+  --links-l-factor: 1;
+  --main-h: 145;
+  --main-s: 69%;
+  --main-l: 41%;
+  --topbar-text-l-factor: 100;
+  --topbar-links-hover-color-primary: #f5f5f5;
+  --sidebar-text-l-factor: -.5;
+  --login-bg-image: url("https://images.unsplash.com/photo-1497384401032-2182d2687715?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  /*
+  ================================================================================================================================================================================
+  ================================================================================================================================================================================
+  ================================================================================================================================================================================
+  */
+  /*
+  ==============================================================================
+  PRIMARY COLORS
+  ==============================================================================
+  */
+  --primary-h: 1;
+  --primary-s: 1%;
+  --primary-l: 1%;
+  --primary-hsl: calc( var(--primary-h) * var(--primary-color-h-factor)), calc(var(--primary-s) * var(--primary-color-s-factor)), calc(var(--primary-l) * var(--primary-color-l-factor) * var(--unit-m)) ;
+  --primary-color: hsl(var(--primary-hsl));
+  --primary-color-min: hsl(calc(var(--primary-h) * var(--primary-color-h-factor)), calc(var(--primary-s) * var(--primary-color-s-factor)), calc(var(--primary-l) * var(--primary-color-l-factor) * var(--unit-max)) );
+  --primary-color-xxs: hsl(calc(var(--primary-h) * var(--primary-color-h-factor)), calc(var(--primary-s) * var(--primary-color-s-factor)), calc(var(--primary-l) * var(--primary-color-l-factor) * var(--unit-xxl)) );
+  --primary-color-xs: hsl(calc(var(--primary-h) * var(--primary-color-h-factor)), calc(var(--primary-s) * var(--primary-color-s-factor)), calc(var(--primary-l) * var(--primary-color-l-factor) * var(--unit-xl)) );
+  --primary-color-s: hsl(calc(var(--primary-h) * var(--primary-color-h-factor)), calc(var(--primary-s) * var(--primary-color-s-factor)), calc(var(--primary-l) * var(--primary-color-l-factor) * var(--unit-l)) );
+  --primary-color-m: hsl(calc(var(--primary-h) * var(--primary-color-h-factor)), calc(var(--primary-s) * var(--primary-color-s-factor)), calc(var(--primary-l) * var(--primary-color-l-factor) * var(--unit-m)) );
+  --primary-color-l: hsl(calc(var(--primary-h) * var(--primary-color-h-factor)), calc(var(--primary-s) * var(--primary-color-s-factor)), calc(var(--primary-l) * var(--primary-color-l-factor) * var(--unit-s)) );
+  --primary-color-xl: hsl(calc(var(--primary-h) * var(--primary-color-h-factor)), calc(var(--primary-s) * var(--primary-color-s-factor)), calc(var(--primary-l) * var(--primary-color-l-factor) * var(--unit-xs)) );
+  --primary-color-xxl: hsl(calc(var(--primary-h) * var(--primary-color-h-factor)), calc(var(--primary-s) * var(--primary-color-s-factor)), calc(var(--primary-l) * var(--primary-color-l-factor) * var(--unit-xxs)) );
+  --primary-color-max: hsl(calc(var(--primary-h) * var(--primary-color-h-factor)), calc(var(--primary-s) * var(--primary-color-s-factor)), calc(var(--primary-l) * var(--primary-color-l-factor) * var(--unit-min)) );
+  /*
+  ==============================================================================
+  TEXT
+  ==============================================================================
+  */
+  /* ---------------------
+  * User control
+  * ---------------------
+  */
+  --text-h: 145;
+  --text-s: 20%;
+  --text-l: 20%;
+  /* ======================
+  * end User control
+  * ======================
+  */
+  --text-color-min: hsl(var(--text-h), var(--text-s), calc(var(--text-l) * var(--text-l-factor) + 100%));
+  --text-color-bright: hsl(var(--text-h), var(--text-s), calc(var(--text-l) * var(--text-l-factor) + 30%));
+  --text-color: hsl(var(--text-h), var(--text-s), calc(var(--text-l) * var(--text-l-factor)));
+  --text-color-dark: hsl(var(--text-h), var(--text-s), calc(var(--text-l) * var(--text-l-factor) - 30%));
+  --text-color-max: hsl(var(--text-h), var(--text-s), calc(var(--text-l) * var(--text-l-factor) - 100%));
+  /*
+  * ---------------------------------------------------------------------------
+  * ---------------------------------------------------------------------------
+  * Variables below this line are provided by Heights Platform
+  * ---------------------------------------------------------------------------
+  * ---------------------------------------------------------------------------
+  */
+  /*
+  ==============================================================================
+  BUTTONS (Heights platform)
+  ==============================================================================
+  */
+  /* ======================
+  * User control
+  * ======================
+  */
+  --main-h: 145;
+  --main-s: 69%;
+  --main-l: 41%;
+  /* ======================
+  * End User control
+  * ======================
+  */
+  /*--main-hsl: var(--main-h), var(--main-s), var(--main-l);
+  --main-color: hsl(var(--main-hsl));
+  --main-color-dark: hsl(var(--main-h), var(--main-s), calc(var(--main-l) - 10%));
+  --main-color-darker: hsl(var(--main-h), var(--main-s), calc(var(--main-l) - 20%));
+  --main-color-bright: hsl(var(--main-h), var(--main-s), calc(var(--main-l) + 21%));
+  */
+  /*
+  * ---------------------
+  * ACCENT (buttons)
+  * ---------------------
+  */
+  /* ======================
+  * User control
+  * ======================
+  */
+  --links-color-min: hsl(var(--links-h), var(--links-s), calc(var(--links-l) * var(--links-l-factor) + 100%));
+  --links-color-bright: hsl(var(--links-h), var(--links-s), calc(var(--links-l) * var(--links-l-factor) + 30%));
+  --links-color: hsl(var(--links-h), var(--links-s), calc(var(--links-l) * var(--links-l-factor)));
+  --links-color-dark: hsl(var(--links-h), var(--links-s), calc(var(--links-l) * var(--links-l-factor) - 30%));
+  --links-color-max: hsl(var(--links-h), var(--links-s), calc(var(--links-l) * var(--links-l-factor) - 100%));
+  /* ======================
+  * End User control
+  * ======================
+  */
+  /*
+  --accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --accent-color: hsl(var(--accent-hsl));
+  --accent-color-dark: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 10%));
+  --accent-color-darker: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 20%));
+  */
+  /*
+  ==============================================================================
+  TOPBAR
+  ==============================================================================
+  */
+  /*
+  // * =====================
+  // * User control
+  // * ======================
+  */
+  --topbar-h: 1;
+  --topbar-s: 1%;
+  --topbar-l: 1%;
+  /* ======================
+  * End User control
+  * ======================
+  */
+  --topbar-hsl: calc(var(--topbar-h) * var(--topbar-h-factor)), calc(var(--topbar-s) * var(--topbar-s-factor)), calc(var(--topbar-l) * var(--topbar-l-factor));
+  --topbar-color: hsl(var(--topbar-hsl));
+  --topbar-secondary-h: calc(var(--topbar-h) * var(--topbar-h-factor));
+  --topbar-secondary-s: calc(var(--topbar-s) * var(--topbar-s-factor));
+  --topbar-secondary-l: calc(var(--topbar-h) * var(--topbar-h-factor) + 10%);
+  --topbar-secondary-h: var(--topbar-h);
+  --topbar-secondary-s: var(--topbar-s);
+  --topbar-secondary-l: calc(var(--topbar-h-factor) + 10%);
+  --topbar-secondary-color-bright: hsl(calc(var(--topbar-secondary-h) * var(--topbar-h-factor)), calc(var(--topbar-secondary-s) * var(--topbar-s-factor)), calc(var(--topbar-secondary-l) * var(--topbar-l-factor) + 10% + 30%));
+  --topbar-secondary-color: hsl(calc(var(--topbar-secondary-h) * var(--topbar-h-factor)), calc(var(--topbar-secondary-s) * var(--topbar-s-factor)), calc(var(--topbar-secondary-l) * var(--topbar-l-factor) + 10% ));
+  --topbar-secondary-color-dark: hsl(calc(var(--topbar-secondary-h) * var(--topbar-h-factor)), calc(var(--topbar-secondary-s) * var(--topbar-s-factor)), calc(var(--topbar-secondary-l) * var(--topbar-l-factor) + 10% - 30%));
+  --topbar-primary-text-color-min: hsl(var(--text-h), var(--text-s), calc(var(--text-l) * var(--topbar-text-l-factor) + 100%));
+  --topbar-primary-text-color-bright: hsl(var(--text-h), var(--text-s), calc(var(--text-l) * var(--topbar-text-l-factor) + 30%));
+  --topbar-primary-text-color: hsl(var(--text-h), var(--text-s), calc(var(--text-l) * var(--topbar-text-l-factor)));
+  --topbar-primary-text-color-dark: hsl(var(--text-h), var(--text-s), calc(var(--text-l) * var(--topbar-text-l-factor) - 30%));
+  --topbar-primary-text-color-max: hsl(var(--text-h), var(--text-s), calc(var(--text-l) * var(--topbar-text-l-factor) - 100%));
+  --topbar-secondary-text-color: hsl(var(--text-h), var(--text-s), calc(var(--text-l) * (var(--topbar-text-l-factor) * -1)));
+  --topbar-logo-color: var(--topbar-primary-text-color-bright);
+  --topbar-text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+  --topbar-icon-color: var(--topbar-primary-text-color);
+  --topbar-icon-hover-color: var(--topbar-primary-text-color);
+  --topbar-icon-text-shadow: var(--topbar-primary-text-color);
+  /*
+  ==============================================================================
+  SIDEBAR
+  ==============================================================================
+  */
+  /* ======================
+  * User control
+  * ======================
+  */
+  /* ======================
+  * End User control
+  * ======================
+  */
+  --sidebar-h: 1;
+  --sidebar-s: 1%;
+  --sidebar-l: 1%;
+  --sidebar-color-bright: hsl(calc(var(--sidebar-h) * var(--sidebar-h-factor)), calc(var(--sidebar-s) * var(--sidebar-s-factor)), calc(var(--sidebar-l) * var(--sidebar-l-factor) + 10%));
+  --sidebar-color: hsl(calc(var(--sidebar-h) * var(--sidebar-h-factor)), calc(var(--sidebar-s) * var(--sidebar-s-factor)), calc(var(--sidebar-l) * var(--sidebar-l-factor)));
+  --sidebar-color-dark: hsl(calc(var(--sidebar-h) * var(--sidebar-h-factor)), calc(var(--sidebar-s) * var(--sidebar-s-factor)), calc(var(--sidebar-l) * var(--sidebar-l-factor) - 10%));
+  --sidebar-text-color-min: hsl(var(--text-h), var(--text-s), calc(var(--text-l) * var(--sidebar-text-l-factor) + 100%));
+  --sidebar-text-color-bright: hsl(var(--text-h), var(--text-s), calc(var(--text-l) * var(--sidebar-text-l-factor) + 30%));
+  --sidebar-text-color: hsl(var(--text-h), var(--text-s), calc(var(--text-l) * var(--sidebar-text-l-factor)));
+  --sidebar-text-color-dark: hsl(var(--text-h), var(--text-s), calc(var(--text-l) * var(--sidebar-text-l-factor) - 30%));
+  --sidebar-text-color-max: hsl(var(--text-h), var(--text-s), calc(var(--text-l) * var(--sidebar-text-l-factor) + 100%));
+  /*
+  * ---------------------
+  * MAIN CONTENT
+  * ---------------------
+  */
+  --center-color: hsl(var(--center-h-factor), calc(var(--primary-s) * var(--center-s-factor)), calc(var(--primary-l) * var(--center-l-factor)));
+  /*
+  * ---------------------
+  * ICONS
+  * ---------------------
+  */
+  --global-icon-font: "Font Awesome 6 Pro";
+}
+
+/*
+:root {
+  // * *******************
+  // COLORS
+  // ********************
+  // GLOBAL
+  --aa-global-color-primary: #f5f5f5;
+  --aa-global-color-secondary: #fff;
+
+
+  // LOGIN PAGE
+  // --login-bg-image: url('');
+
+  // *******************
+  // LINKS
+  // ********************
+  // Navigation
+  --topbar-links-primary-color: #333;
+  --topbar-links-hover-color-primary: #000;
+  // Burger
+  --topbar-burger-hover-color: #000;
+
+  // SIDEBAR
+
+  // MAIN
+  --lesson-info-text-color-primary: #9b9b9b;
+
+  // HIGHLIGHT COLOR (.buy-row, etc...)
+  --highlight-color-primary : #2bacaa;
+}
+*/

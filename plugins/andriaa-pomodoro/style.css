@@ -1,0 +1,172 @@
+ /*
+**************************************
+*
+* (POMODORO) STYLE.CSS
+*
+**************************************
+* Started working on : 2019
+* Last edit : 2023.06.09, 07:52
+*/
+
+
+
+:root{
+  --pmd-pomodoroBgColor: transparent;
+
+  --pmd-sizeControl: 1;
+
+  --pmd-fontMainColor: #908b8b;
+  --pmd-fontTextSize: calc(var(--pmd-sizeControl) * 1.4rem);
+  --pmd-workColor: #d80000;
+  --pmd-breakColor: #23ba23;
+  --pmd-neutralColor: #EFEFEF;
+
+  --pmd-progressBarHeight: calc(var(--pmd-sizeControl) * 5px);
+
+  --pmd-buttonsSize: calc(var(--pmd-sizeControl) * 34px);
+  --pmd-buttonsBgColor: #FFFFFF;
+  --pmd-buttonsTextSize: calc(var(--pmd-sizeControl) * .7rem);
+  --pmd-buttonsTextColor: #AFAFAF;
+  --pmd-buttonsBorderColor: transparent;
+  --pmd-boxShadowMain: 0 0 20px rgba(0, 0, 0, .1);
+}
+
+
+/* *************
+* CONTAINER
+* **************
+*/
+.andriaa-pomodoro {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 10px 10px;
+  background-color: var(--pmd-pomodoroBgColor);
+}
+
+/* ***************************************
+* FULLSCREEN
+* ****************************************
+*/
+.andriaa-pomodoro.dark-mode {
+  --pmd-pomodoroBgColor: #002340;
+  --pmd-neutralColor: #003340;
+  --pmd-fontMainColor: #908b8b;
+  --pmd-buttonsTextColor: #003340;
+  --pmd-buttonsBgColor: #003340;
+}
+
+.andriaa-pomodoro.fullscreen {
+  --pmd-sizeControl: 2;
+  --pmd-fontTextSize: calc(var(--pmd-sizeControl) * 1.4rem);
+  --pmd-progressBarHeight: calc(var(--pmd-sizeControl) * 4px);
+  --pmd-buttonsSize: calc(var(--pmd-sizeControl) * 20px); 
+  
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  z-index: 3;
+
+  align-items: center;
+  justify-content: center;
+  
+  background-color: #FFF;
+  box-shadow: var(--pmd-boxShadowMain); 
+}
+
+
+
+
+
+/* *************
+* TIMERS
+* **************
+*/
+.timers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px 0 10px;
+  font-size: var(--pmd-fontTextSize);
+  font-family: sans-serif;
+}
+
+.timers > div {
+  text-align: center;
+}
+
+.pomodoro-timer .workTimer{
+  color: var(--pmd-workColor);
+}
+
+.pomodoro-timer .breakTimer,
+.pomodoro-timer .longBreakTimer{
+  color: var(--pmd-breakColor);
+}
+
+/* *************
+* PROGRESS BARS
+* **************
+*/
+.progressBars{
+  position: relative;
+  margin: 0 0 20px;
+}
+
+    .progressBar{
+      height: var(--pmd-progressBarHeight);
+      top: 0;
+      position: absolute;
+    }
+
+    .workProgressBar{
+      background-color: var(--pmd-workColor);
+      z-index: 2;
+    }
+    .breakProgressBar,
+    .longBreakProgressBar{
+      background-color: var(--pmd-breakColor);
+      z-index: 2;
+    }
+
+    .progressBar-bg{
+      width: 100%;
+      background-color: var(--pmd-neutralColor);
+      z-index: 1;
+    }
+
+
+/* *************
+* BUTTONS
+* **************
+*/
+.buttons{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.buttons button {
+  margin: 0 5px 0 5px;
+  padding: 6px 10px;
+  width: var(--pmd-buttonsSize);
+  height: var(--pmd-buttonsSize);
+  min-width: var(--pmd-buttonsSize);
+  min-height: var(--pmd-buttonsSize);
+
+  font-size: var(--pmd-buttonsTextSize);
+  line-height: .5em;
+  color: var(--pmd-buttonsTextColor);
+  font-weight: bold;
+  
+  background-color: var(--pmd-buttonsBgColor);
+  border: none;
+  border-radius: 50%; 
+  border: 1px solid var(--pmd-buttonsBorderColor);
+  box-shadow: var(--pmd-boxShadowMain);
+  cursor: pointer;
+
+}
+
+
+
