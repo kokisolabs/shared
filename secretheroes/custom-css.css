@@ -1,0 +1,315 @@
+.block--empty{
+    display:none;
+}
+
+div#richEditor.editor.editor--live{
+    padding-top:50px !important;
+}
+
+div#richEditor.editor.editor--live.Paperform__Container{
+    padding-bottom:0px !important;
+}
+
+.LiveField__header{
+    display:none;
+}
+
+.LiveField__input {
+	font-size:1.2rem;
+}
+
+.editor .LiveField .LiveField__container{
+    padding-top:0;
+}
+
+
+::placeholder{
+    font-size:.9em;
+    opacity: 1;
+}
+
+.body--secretheroes input::placeholder,
+.body--secretheroesfr input::placeholder{
+    color:#CE0000;  
+}
+
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-size:.9em;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    font-size:.9em;
+}
+
+.editor.editor--live .submit{
+    margin-top:0 !important;    
+}
+
+.editor .btn-raised.btn-primary{
+    border-radius:30px;
+    background:#CE0000;    
+}
+
+
+
+
+@media (min-width: 480px) {
+    
+    
+    .editor.Paperform__Container .btn-raised.btn-primary{
+        color:transparent !important;
+        background:#CE0000 url(img/paper_plane_white.png) no-repeat center center;
+        background-size:50%;
+        max-width: 50px;
+        max-height:50px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    
+    .Paperform__QuestionBlock {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        
+    }
+    
+    .Paperform__QuestionBlock > div {
+        margin-left: 15px;
+    }
+    
+    .Paperform__QuestionBlock > div:first-child {
+        margin-left: 0;
+    }
+    
+    .Paperform__Question {
+        flex: 1;
+    }
+    
+    .LiveField {
+        width: auto;
+    }
+    
+    form[data-offset-key="fhbj0-0-0"],
+    /*h2[data-offset-key="afvrc-0-0"],*/
+    h2[data-offset-key="1evob-0-0"]{
+        max-width:320px !important;   
+        padding: 30px 30px 40px !important;
+    }
+    
+    form[data-offset-key="fhbj0-0-0"] input.LiveField__input::placeholder{
+        font-size:3rem;
+    }
+    form[data-offset-key="fhbj0-0-0"] > span:last-child,
+    /*div[data-offset-key="afvrc-0-0"] > span:last-child,*/
+    div[data-offset-key="1evob-0-0"] > span:last-child{
+        font-size:5rem !important;   
+    }
+    
+    /*
+    -----------------
+    ANSWER PIPING
+    -----------------
+    */
+    /* User email */
+    .AnswerPipe--ce12b::before{
+        left: -24px !important;
+        top:2px !important;
+    }
+    .AnswerPipe--ce12b{
+        top:0;
+        left:24px !important;
+        max-width: 100%  !important;
+    }
+}
+
+@media (max-width: 480px) {
+    div#richEditor.editor.editor--live{
+       padding-top:14px !important;
+    }
+    
+    h2[data-offset-key="afvrc-0-0"],
+    h2[data-offset-key="9ocnl-0-0"]{
+        font-size: 36px !important;
+        line-height: 40px !important;
+    }   
+    
+    .LiveField__input{
+      margin-top:30px;      
+    }
+    
+    .editor.editor--live .submit{
+    	margin-top:30px !important;    
+	}
+}
+
+
+
+
+/*
+-------------
+HEADLINE
+-------------
+*/
+/*
+h2[data-offset-key="afvrc-0-0"]{
+    margin-top:60px !important;
+}
+
+h2[data-offset-key="a9hu-0-0"],
+h2[data-offset-key="5tvth-0-0"]{
+    font-size: 4rem !important;
+}
+*/
+
+
+
+/*
+-------------
+THE FORM
+-------------
+*/
+div.paperform__page[data-offset-key="31eudq-0-0"] > form{
+    padding-bottom:0;
+}
+
+
+/* Add Padding to fields */
+.editor .LiveField .LiveField__container {
+	padding:0 0 0 22px !important;
+}
+
+.notice{
+	text-align:center;
+}
+.notice span{
+	background: #FBFBFB;
+    padding: 6px 16px;
+    border-radius: 6px;
+}
+
+
+
+/*
+-------------
+ADD NUMBERS TO MULTIPLE MESSAGES FORM
+-------------
+*/
+
+
+/*
+-------------
+CARD
+-------------
+*/
+div.paperform__page[data-offset-key="3kgp9-0-0"],
+div.paperform__page[data-offset-key="63tor-0-0"],
+div.paperform__page[data-offset-key="enmcr-0-0"],
+div.paperform__page[data-offset-key="9nhl3-0-0"],
+div.paperform__page[data-offset-key="7v0j2-0-0"],
+
+
+.body--secretheroesteam .Paperform__QuestionBlock--1eudq,
+.body--secretheroesteamfr .Paperform__QuestionBlock--1eudq,
+.Paperform__QuestionBlock--8va9,
+.Paperform__QuestionBlock--5563c,
+.Paperform__QuestionBlock--c2ire,
+.Paperform__QuestionBlock--6mot9,
+.Paperform__QuestionBlock--9etb0{
+    box-shadow: 0 30px 30px rgba(0, 0, 0, .1);
+    padding: 20px 30px 0;
+    font-size:1.2rem;
+    color: rgba(0, 0, 0, 0.56);
+    line-height:1.4em;
+    overflow: hidden;
+    background: #FFF;
+    color:#000;
+}
+
+
+/* First Paragraph */
+
+div.paperform__page[data-offset-key="3kgp9-0-0"]{
+ padding-top:120px;   
+ box-shadow: 0 0 30px rgba(0, 0, 0, .1);
+}
+
+/* Multiple Forms */
+.Paperform__QuestionBlock--1eudq{
+ padding-top:70px !important;   
+}
+
+/* Last Paragraph */
+div.paperform__page[data-offset-key="7v0j2-0-0"]{
+ padding-bottom:60px;   
+}
+
+/* Multiple Forms */
+.Paperform__QuestionBlock--9etb0{
+ padding-bottom:40px !important;   
+}
+
+
+div.paperform__page[data-offset-key="3kgp9-0-0"] > div,
+div.paperform__page[data-offset-key="63tor-0-0"] > div,
+div.paperform__page[data-offset-key="enmcr-0-0"] > div,
+div.paperform__page[data-offset-key="9nhl3-0-0"] > div,
+div.paperform__page[data-offset-key="7v0j2-0-0"] > div{
+	max-width: 480Px!important;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+.body--secretheroesteam .LiveField.Paperform__Question--1m8p5 .LiveField__input,
+.body--secretheroesteamfr .LiveField.Paperform__Question--5hchb .LiveField__input{
+	text-align:center;
+	background:#fbf8f8;
+	padding:16px 8px;
+}
+
+/*
+-----------------
+ANSWER PIPING
+-----------------
+*/
+/* User name */
+.AnswerPipe--agsfa{
+    color:#CE0000;
+    margin-left:2px;
+}
+/* User email */
+.AnswerPipe--ce12b::before{
+    position: absolute;
+    content: "✉️";
+    top:-20px;
+}
+.AnswerPipe--ce12b{
+   color: #AAA;
+    display: block;
+    position: absolute;
+    top: -60px;
+    left: 0px;
+    font-size: 1.3rem;
+    max-width: 150px;
+    line-height: 1em;
+}
+
+/*
+-----------------
+FOOTER
+-----------------
+*/
+
+h3{
+    color:#cE0000;
+    text-align:center;
+    margin-top:30px;
+    padding: 0 10px;
+    font-size:1.5rem;
+    line-height: 1.4em;
+    letter-spacing:0.0725em;
+    margin-top:70px;
+    opacity:1;
+    font-family: Amatic SC, "Helvetica Neue", Helvetica, Roboto, sans-serif;
+}
