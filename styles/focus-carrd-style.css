@@ -8,7 +8,7 @@ Css style for the website : https://deepfocus.carrd.co
 */
 
 /* IMPORT POMODORO WIDGET */
-@import url("https://angeandria.com/external/plugins/andriaa-pomodoro/style.css");
+@import url("https://cdn.jsdelivr.net/gh/kokisolabs/shared@latest/plugins/andriaa-pomodoro/style.css");
 
 
 #wrapper{

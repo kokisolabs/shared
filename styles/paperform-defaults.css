@@ -7,6 +7,7 @@ PAPERFORM DEFAULTS
 import defaults that I want to apply accros several paperforms
 Use : @import url("https://angeandria.com/external/paperform-defaults.css");
 */
+@import url("https://cdn.jsdelivr.net/gh/kokisolabs/shared@latest/styles/paperform-checkout.css");
 
 /* Remove empty lines */
 .block--empty{
