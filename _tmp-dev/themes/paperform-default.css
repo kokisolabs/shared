@@ -1,0 +1,61 @@
+@import url("https://www.meetelly.com/dev/themes/stack/style/css/icons.css");
+@import url("https://www.meetelly.com/dev/themes/stack/style/css/iconsmind-light.css");
+@import url("https://www.meetelly.com/dev/themes/stack/style/css/iconsmind.css");
+@import url("https://www.meetelly.com/dev/themes/stack/style/css/plugins.css");
+@import url("https://www.meetelly.com/dev/themes/stack/style/css/bootstrap.css");
+@import url("https://www.meetelly.com/dev/themes/stack/style/css/theme.css");
+@import url("https://www.meetelly.com/dev/themes/stack/style.css");
+/*@import url("https://www.meetelly.com/dev/themes/font.css");*/
+
+
+/*
+* -----------------
+* GENERAL
+* -----------------
+*/
+body{
+    font-family: 'Lato', 'Verdana', 'Helvetica', sans-serif;
+}
+
+*, :after, :before, body {
+     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+}
+
+.btn:after{
+    display:none;
+}
+
+/*
+* -----------------
+* PAPERFORM
+* -----------------
+*/
+.editor{
+    padding-top:0;
+    padding-bottom:0;
+    font-size:inherit;
+    line-height:1.85714286em;
+}
+
+@media (max-width: 740px){
+	.editor.editor--live {
+		padding:0;
+		padding-bottom:0;
+	}
+	
+	figure:not(.customHTML-fullWidth){
+		padding-left:25px;
+		padding-right:25px;
+	}
+}
+
+.Choices__input {
+    opacity: 0;
+    width: .001px !important;
+    position: absolute !important;
+}
+.block--empty,
+.body--nobranding .Footer{
+    display:none;   
+}

@@ -1,0 +1,44 @@
+/*
+* -------------
+* CHECKOUT
+* -------------
+*/
+
+.Checkout{
+    background:#F2F2F5;
+    padding:40px 5%;
+    box-shadow: 0 0 1px 1px #FFF inset, 0 0 4px rgba(0, 0, 0, .3);
+    border-radius: 6px;
+}
+
+
+.Checkout__title {
+    font-size: 2rem;
+    font-weight: 900;
+    text-shadow: 0 1px 1px #FFF;
+}
+
+.editor .Checkout .LiveField__input,
+.StripeCheckout__CardWrapper,
+.Checkout .Select-control{
+    background-color:#FFF;   
+}
+
+.editor .Checkout .LiveField__input{
+    box-shadow:1px 1px 1px rgba(0, 0, 0, .3) inset, 0px 1px 1px #FFF;
+    border-radius: 4px;
+}
+
+.editor .Checkout .LiveField .LiveField__container{
+    padding-top:10px;
+    padding-bottom:0;
+}
+
+.editor .Checkout .Field__header, .editor .Checkout .LiveField__header{
+    color:#888 !important;
+    font-size:1.6rem;
+}
+
+.Checkout .btn-raised{
+    box-shadow:none;
+}
